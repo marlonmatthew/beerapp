@@ -6,7 +6,7 @@ const passport = require("./config/passport");
 
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
-const db = require("./models");
+// const db = require("./models");
 
 // Creating express app and configuring middleware needed for authentication
 const app = express();
@@ -23,8 +23,8 @@ app.use(passport.session());
 
 const exphbs = require("express-handlebars");
 
-app.engine(`handlebars`, exphbs({ defaultLayout: `main`}));
-app.set(`view engine`, `handlebars`);
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
@@ -42,4 +42,4 @@ require("./routes/api-routes.js")(app);
 
 app.listen(PORT, () => {
   console.log(`Server listening on: localhost:${PORT}`);
-})
+});
