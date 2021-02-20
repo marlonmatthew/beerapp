@@ -14,7 +14,7 @@
   * [Screencastify](#Screencastify)
 
 ## User Story 
-Imagine walking into a liquor store and not knowing what to get. Now the User can choose what kind of beer they would like to drink. Depending on the specific categories they choose.  From thousands of different beers and the ability to input beers that the User comes across. 
+Imagine walking into a liquor store and not knowing what to get. Now the User can choose what kind of beer they would like to drink. Depending on the specific categories they choose.  From thousands of different beers and the ability to input beers that the User comes across.   
 
 
 ## Description
