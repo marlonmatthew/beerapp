@@ -2,9 +2,15 @@ document.getElementById("age").addEventListener("click", myFunction);
 
 function myFunction() {
   const bdayInput = document.getElementById("bday").value;
-  // const approvedAge = new Date(Date.now());
-  console.log(bdayInput);
-  console.log(Date.now());
-  // window.location.href = "/index";
-  console.log("this is a test");
+  const today = new Date();
+  const thisYear = today.getFullYear();
+  const dirth = new Date(bdayInput);
+  const bdYear = dirth.getFullYear();
+
+  const age = parseInt(thisYear) - parseInt(bdYear);
+  console.log(`age ${age}`);
+  if (age > 21) {
+    window.location.href = "/index";
+  }
+  console.log("nope! not of age");
 }
