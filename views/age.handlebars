@@ -1,7 +1,6 @@
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
     </div>
   </nav>
   <div class ="screen"></div>
@@ -12,10 +11,12 @@
         {{!-- <form class="login" action="/index"> --}}
           <div class="form-group">
             <label for="Input">What year were you born</label>
-            <input type="textbox" class="form-control" id="year" placeholder="Year">
+            <input type="date" value="2000-01-01" class="form-control" id="year" placeholder="Year">
           </div>
-          
+          <div class= "over">
           <button id="age" class="btn btn-default">Over 21</button>
+          <button id="age" class="btn btn-default">Not over 21</button>
+          </div>
         {{!-- </form> --}}
         <br /> 
       </div>
@@ -34,3 +35,6 @@
    <link rel="stylesheet" href="../stylesheets/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="/js/beer.js"></script>
+  </div>
+</nav>
+
