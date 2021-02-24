@@ -1,23 +1,17 @@
-// // Set up MySQL connection.
-// const mysql = require('mysql');
+// Dependencies
+const Sequelize = require("sequelize");
 
-// const connection = mysql.createConnection({
-//   host: 'localhost',
-//   port: 3306,
-//   user: 'root',
-//   // NOTE: Be sure to add your MySQL password here!
-//   password: 'troya',
-//   database: '',
-// });
+// Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
+const sequelize = new Sequelize("sequelize_library", "root", "", {
+  host: "localhost",
+  port: 3306,
+  dialect: "mysql",
+  pool: {
+    max: 5,
+    min: 0,
+    idle: 10000
+  }
+});
 
-// // Make connection.
-// connection.connect((err) => {
-//   if (err) {
-//     console.error(`error connecting: ${err.stack}`);
-//     return;
-//   }
-//   console.log(`connected as id ${connection.threadId}`);
-// });
-
-// // Export connection for our ORM to use.
-// module.exports = connection;
+// Exports the connection for other files to use
+module.exports = sequelize;
