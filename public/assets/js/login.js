@@ -1,39 +1,46 @@
-document.ready(() => {
-  // Getting references to our form and inputs
-  const loginForm = $("form.login");
-  const emailInput = $("input#email-input");
-  const passwordInput = $("input#password-input");
+const loginButton = document.getElementById("login-button");
 
-  // When the form is submitted, we validate there's an email and password entered
-  loginForm.on("submit", event => {
-    event.preventDefault();
-    const userData = {
-      email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
-    };
+const errorToString = e => {
+  e.name = "";
+  return e.toString();
+};
 
-    if (!userData.email || !userData.password) {
-      return;
-    }
+loginButton.addEventListener("click", () => {
+  const emailInput = document.getElementById("email").value.trim();
+  const passwordInput = document.getElementById("password").value.trim();
 
-    // If we have an email and password we run the loginUser function and clear the form
-    loginUser(userData.email, userData.password);
-    emailInput.val("");
-    passwordInput.val("");
-  });
+  loginButton.classList.add("is-loading");
 
-  // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
-  function loginUser(email, password) {
-    $.post("/api/login", {
-      email: email,
-      password: password
+  fetch("/api/login", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      email: emailInput,
+      password: passwordInput
     })
-      .then(() => {
-        window.location.replace("/members");
-        // If there's an error, log the error
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
+  })
+    .then(response => {
+      console.log(response);
+
+      if (!response.ok) {
+        loginButton.classList.remove("is-loading");
+
+        throw new Error(response.status);
+      }
+
+      return response.json();
+    })
+    .then(() => {
+      loginButton.classList.remove("is-loading");
+
+      window.location.href = "index";
+    })
+    .catch(error => {
+      if (errorToString(error) === "401") {
+        console.log("401 error");
+      }
+    });
 });
