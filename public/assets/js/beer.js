@@ -1,5 +1,5 @@
 document.getElementById("age").addEventListener("click", myFunction);
-
+console.log("This is running")
 function myFunction() {
   const bdayInput = document.getElementById("bday").value;
   const today = new Date();
@@ -10,7 +10,7 @@ function myFunction() {
   const age = parseInt(thisYear) - parseInt(bdYear);
   console.log(`age ${age}`);
   if (age > 21) {
-    window.location.href = "/index";
+    window.location.href = "/login";
   }
   console.log("nope! not of age");
 }
