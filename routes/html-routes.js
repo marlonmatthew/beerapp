@@ -32,7 +32,7 @@ module.exports = app => {
   app.get("/index", (req, res) => {
     console.log("this is in html routes");
     res.render("index");
-    // res.send("Welcome to the INdex");
+
     // res.sendFile(path.join(__dirname, "../views/index.handlebars"));
   });
 
