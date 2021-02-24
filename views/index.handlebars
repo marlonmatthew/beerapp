@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-=======
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
->>>>>>> 5783424be9041d153b1d9c6594bc0ffd387eda2e
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Beer Me</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -17,35 +11,13 @@
         </li>
       </ul>
       <form class="d-flex">
-<<<<<<< HEAD
-        <a class="nav-link" href="#">Beer List</a>
-        {{!-- insert beer list somehow? excel sheet? --}}
-=======
         <a class="nav-link" href="#">Profile</a>
->>>>>>> 5783424be9041d153b1d9c6594bc0ffd387eda2e
         <a class="nav-link" href="#">Log Out</a>
       </form>
     </div>
   </div>
 </nav>
 
-<<<<<<< HEAD
-<h1>Welcome {{firstName}}</h1>
-{{!-- <link rel="stylesheet" href="../stylesheets/style.css"> --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/beer.js"></script>
-
-<div class="card" style="width: 18rem;">
-  <img src="https://res.cloudinary.com/cfuer12/image/upload/v1613855356/beerapp/10w-40.png
-" class="card-img-top" alt="10w-40">
-  <div class="card-body">
-    <h5 class="card-title">Beer of the Day!</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-    </p>
-    <a href="#" class="btn btn-primary">See image</a>
-  </div>
-</div>
-=======
 <div class="container">
 
   <div class="row">
@@ -69,10 +41,15 @@
           <div class="form-group">
             <label for="exampleFormControlSelect2">Select a flavor:</label>
             <select multiple class="form-control" id="exampleFormControlSelect2">
-              <option>Ale</option>
+              {{!-- <option>Ale</option>
               <option>IPA</option>
               <option>Stout</option>
-              <option>Gose</option>
+              <option>Gose</option> --}}
+              <option><button type="button" class="btn btn-danger">Ale</button>
+              <button type="button" class="btn btn-warning">IPA</button>
+              <button type="button" class="btn btn-dark">Stout</button>
+              <button type="button" class="btn btn-success">Gose</button></option>
+              
             </select>
           </div>
 
@@ -86,7 +63,7 @@
     <div class="col-2">
 
       <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
+        <img src="https://res.cloudinary.com/cfuer12/image/upload/v1613855356/beerapp/10w-40.png" class="card-img-top" alt="10w-40">
         <div class="card-body">
           <h5 class="card-title">Featured Beer</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -113,4 +90,3 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/beer.js"></script>
->>>>>>> 5783424be9041d153b1d9c6594bc0ffd387eda2e
