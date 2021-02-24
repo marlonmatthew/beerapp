@@ -9,7 +9,8 @@ CREATE TABLE beers
     brewery varchar(250) not null,
     flavor varchar(250) not null,
 	abv decimal (3, 1) null,
-    class varchar (250) not null
+    class varchar (250) not null,
+    image varchar (300) not null
 );
 
 select * from beers;
