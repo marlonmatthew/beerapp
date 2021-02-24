@@ -11,7 +11,7 @@ const isAuth = (req, res, next) => {
   return next();
 };
 
-module.exports = (app) => {
+module.exports = app => {
   app.post("/api/users", async (req, res) => {
     const { email, password, firstName } = req.body;
 
@@ -19,7 +19,7 @@ module.exports = (app) => {
       const normalEmail = normalizeEmail(email);
 
       const existingUsers = await db.User.findAll({
-        where: { email: normalEmail },
+        where: { email: normalEmail }
       });
 
       if (existingUsers.length > 0) {
@@ -29,13 +29,13 @@ module.exports = (app) => {
       const newUser = await db.User.create({
         email: normalEmail,
         password,
-        firstName,
+        firstName
       });
 
       return res.json({
         email,
         firstName,
-        id: newUser.id,
+        id: newUser.id
       });
     } catch (error) {
       return res.status(503).send("There was an error creating the user");
@@ -46,7 +46,7 @@ module.exports = (app) => {
     res.json({
       email: req.user.email,
       id: req.user.id,
-      firstName: req.user.firstName,
+      firstName: req.user.firstName
     });
   });
 

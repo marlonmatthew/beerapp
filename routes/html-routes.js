@@ -1,16 +1,16 @@
 // Requiring path to so we can use relative routes to our HTML files
-const path = require("path");
-const { nextTick } = require("process");
-const authRoutes = require("./authRoutes");
+// const path = require("path");
+// const { nextTick } = require("process");
+// const authRoutes = require("./authRoutes");
 
-const isAuth =(req, res, next) => {
+const isAuth = (req, res, next) => {
   if (!req.isAuthenticated()) {
-    return res.redirect(401, '/login');
+    return res.redirect(401, "/login");
   }
   next();
 };
 
-module.exports = (app) => {
+module.exports = app => {
   app.get("/", (req, res) => {
     // If the user already has an account send them to the members page
     // if (req.user) {
@@ -36,8 +36,8 @@ module.exports = (app) => {
     // res.sendFile(path.join(__dirname, "../views/index.handlebars"));
   });
 
-  app.get('/index', isAuth, (req,res) =>{
-    res.render("index",{
+  app.get("/index", isAuth, (req, res) => {
+    res.render("index", {
       firstName: req.user.firstName
     });
   });
