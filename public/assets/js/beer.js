@@ -1,11 +1,16 @@
 document.getElementById("age").addEventListener("click", myFunction);
 
 function myFunction() {
-  //   const yearInput = document.getElementById("year").value;
-  // if(yearInput > today - 21 years ){
-  window.location.href = "/index";
-  // }else{
-  //error your old enough
-  // }
-  console.log("this is a test");
+  const bdayInput = document.getElementById("bday").value;
+  const today = new Date();
+  const thisYear = today.getFullYear();
+  const dirth = new Date(bdayInput);
+  const bdYear = dirth.getFullYear();
+
+  const age = parseInt(thisYear) - parseInt(bdYear);
+  console.log(`age ${age}`);
+  if (age > 21) {
+    window.location.href = "/index";
+  }
+  console.log("nope! not of age");
 }
