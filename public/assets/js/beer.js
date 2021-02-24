@@ -1,5 +1,5 @@
 document.getElementById("age").addEventListener("click", myFunction);
-
+console.log("This is running");
 function myFunction() {
   const bdayInput = document.getElementById("bday").value;
   const today = new Date();
