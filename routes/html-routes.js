@@ -36,11 +36,10 @@ module.exports = app => {
     // res.sendFile(path.join(__dirname, "../views/index.handlebars"));
   });
 
-  app.post("/index"),
-  (req, res) => {
-      console.log("getting the page");
-      res.return("index");
-  };
+  app.post("/index", (req, res) => {
+    console.log("getting the page");
+    res.render("index");
+  });
 
   app.get("/login", isAuth, (req, res) => {
     res.render("index", {

@@ -16,7 +16,6 @@ loginButton.addEventListener("click", () => {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json"
-      console.log("hello world")
     },
     body: JSON.stringify({
       email: emailInput,
@@ -47,4 +46,4 @@ loginButton.addEventListener("click", () => {
 });
 //signup
 signUpuser(userData.email, userData.password);
-emailInput.val()
+emailInput.val();
