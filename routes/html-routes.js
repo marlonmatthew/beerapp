@@ -23,20 +23,25 @@ module.exports = app => {
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
     // if (req.user) {
-    console.log("This is to login");
+    console.log("This is to2 login");
     res.render("login");
     // }
     // res.sendFile(path.join(__dirname, "/login.handlebars"));
   });
 
-  app.get("/index", (req, res) => {
+  app.get("/login", (req, res) => {
     console.log("this is in html routes");
     res.render("index");
 
     // res.sendFile(path.join(__dirname, "../views/index.handlebars"));
   });
 
-  app.get("/index", isAuth, (req, res) => {
+  app.post("/index", (req, res) => {
+    console.log("getting the page");
+    res.render("index");
+  });
+
+  app.get("/login", isAuth, (req, res) => {
     res.render("index", {
       firstName: req.user.firstName
     });
