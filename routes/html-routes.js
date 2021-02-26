@@ -36,7 +36,8 @@ module.exports = app => {
     // res.sendFile(path.join(__dirname, "../views/index.handlebars"));
   });
 
-  app.post("/index"), (req,res)=>{
+  app.post("/index"),
+  (req, res) => {
       console.log("getting the page");
       res.return("index");
   };

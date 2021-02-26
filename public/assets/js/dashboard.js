@@ -1,9 +1,9 @@
-const logoutButton = document.getElementById('logout-button');
+const logoutButton = document.getElementById("logout-button");
 
-logoutButton.addEventListener('click', () => {
-  fetch('/api/logout', {
-    method: 'POST',
+logoutButton.addEventListener("click", () => {
+  fetch("/api/logout", {
+    method: "POST"
   }).then(() => {
-    window.location.href = '/login';
+    window.location.href = "/login";
   });
 });
