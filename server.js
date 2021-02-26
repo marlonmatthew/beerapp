@@ -3,7 +3,7 @@ const express = require("express");
 const session = require("express-session");
 const db = require("./models/index");
 
-// Requiring passport as we've configured it
+// Requiring passport as we've configured it---fix this error
 // const passport = require("./config/passport");
 
 // Setting up port and requiring models for syncing
@@ -28,7 +28,7 @@ const exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 // Requiring our routes
-// require("./routes/authRoutes.js")(app);
+require("./routes/authRoutes.js")(app);
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
