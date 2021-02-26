@@ -23,7 +23,8 @@ function getRandomBeer() {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json"
-    },
-    body: JSON.stringify()
-  }).then(response => {});
+    }
+  }).then(response => {
+    console.log(response);
+  });
 }

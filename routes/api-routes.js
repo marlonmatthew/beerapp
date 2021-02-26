@@ -1,6 +1,6 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
-const passport = require("../config/passport");
+// const passport = require("../config/passport");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -53,7 +53,7 @@ module.exports = function(app) {
 
   //Route for getting a beer from database at random for featured beer card
   app.get("/api/featured_beer", (req, res) => {
-    // res.JSON(getRandomBeer());
+    res.JSON(getRandomBeer());
   });
 
   //Route for getting a beer from database at random for featured beer card
@@ -63,7 +63,7 @@ module.exports = function(app) {
 
   //Route for getting entire beer list from database
   app.get("/api/list", (req, res) => {
-    // beer.findAll({}).then(result => res.JSON(result));
+    beer.findAll({}).then(result => res.JSON(result));
   });
 };
 
