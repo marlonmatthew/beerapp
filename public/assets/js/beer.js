@@ -1,5 +1,5 @@
 document.getElementById("age").addEventListener("click", myFunction);
-console.log("This is running");
+
 function myFunction() {
   const bdayInput = document.getElementById("bday").value;
   const today = new Date();
@@ -18,7 +18,23 @@ function myFunction() {
 document.getElementById("randomBeer").addEventListener("click", getRandomBeer);
 
 function getRandomBeer() {
-  fetch("/api/frandom_beer", {
+  fetch("/api/random_beer", {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    }
+  }).then(response => {
+    console.log(response);
+  });
+}
+
+document
+  .getElementById("featuredBeer")
+  .addEventListener("click", getFeaturedBeer);
+
+function getFeaturedBeer() {
+  fetch("/api/featured_beer", {
     method: "GET",
     headers: {
       Accept: "application/json",
