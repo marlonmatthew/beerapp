@@ -47,10 +47,8 @@ module.exports = app => {
     });
   });
 
-  app.get("/signup", (req,res)=> {
-    console.log ("getting page");
-    res.render("signup")
+  app.get("/signup", (req, res) => {
+    console.log("getting page");
+    res.render("signup");
   });
-
-
 };
