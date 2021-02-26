@@ -1,15 +1,15 @@
 {
   "development": {
     "username": "root",
-    "password": "troya",
-    "database": "passport_demo",
-    "host": "127.0.0.1",
+    "password": "Emmamarie1",
+    "database": "beers",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "troya",
-    "database": "database_test",
+    "database": "beers",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
