@@ -16,6 +16,7 @@ loginButton.addEventListener("click", () => {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json"
+      console.log("hello world")
     },
     body: JSON.stringify({
       email: emailInput,
@@ -36,7 +37,7 @@ loginButton.addEventListener("click", () => {
     .then(() => {
       loginButton.classList.remove("is-loading");
 
-      window.location.href = "index";
+      window.location.href = "/index";
     })
     .catch(error => {
       if (errorToString(error) === "401") {
@@ -44,3 +45,6 @@ loginButton.addEventListener("click", () => {
       }
     });
 });
+//signup
+signUpuser(userData.email, userData.password);
+emailInput.val()
