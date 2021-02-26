@@ -14,3 +14,17 @@ function myFunction() {
   }
   console.log("nope! not of age");
 }
+
+document.getElementById("randomBeer").addEventListener("click", getRandomBeer);
+
+function getRandomBeer() {
+  fetch("/api/frandom_beer", {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    }
+  }).then(response => {
+    console.log(response);
+  });
+}
