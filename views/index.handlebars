@@ -11,6 +11,7 @@
         </li>
       </ul>
       <form class="d-flex">
+        <a class="nav-link" href="#">Beer List</a>
         <a class="nav-link" href="#">Profile</a>
         <a class="nav-link" href="#">Log Out</a>
       </form>
@@ -23,32 +24,44 @@
   <div class="row">
 
     <div class="col-10">
-      <h1>Welcome, {{firstName}}</h1>
-      <div id="welcomeText">
+      <h1 id="welcomeHeader">Welcome, {{firstName}}</h1>
+      <div id="welcomeSection">
+        <h5>
+          Hello username!
+        </h5>
         <p>
-          Welcome text here
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia magnam rem libero odio, architecto
+          blanditiis vel excepturi labore neque at iusto voluptas cumque enim! Pariatur ut possimus quaerat ad.
         </p>
       </div>
 
-      <div>
+      <div id="beerSelector">
+        <h5>Find a beer:</h5>
         <form>
 
           <div class="form-group">
-            <label for="formControlRange">Example Range input</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlSelect2">Select a flavor:</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-              <option>Ale</option>
-              <option>IPA</option>
-              <option>Stout</option>
-              <option>Gose</option>
+            <label for="FormControlSelect1" id="label1">Select an ABV% range:</label>
+            <select multiple class="form-control" id="FormControlSelect1">
+              <option>Low</option>
+              <option>Med</option>
+              <option>High</option>
+              <option>Very High</option>
             </select>
           </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <label for="FormControlSelect2" id="label2">Select a flavor:</label>
+            <select multiple class="form-control" id="FormControlSelect2">
+              <option>Ale</option>
+              <option>Berliner Weisse</option>
+              <option>Gose</option>
+              <option>IPA</option>
+              <option>Porter</option>
+              <option>Stout</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
 
         </form>
       </div>
@@ -57,23 +70,23 @@
 
     <div class="col-2">
 
-      <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
+      <div class="card" style="width: 320px;" id="featuredBeer">
+        <img src="./assets/beer-img/apricot-funk.jpg" class="card-img-top" alt="Featured Beer" id="featuredBeerIMG">
+        <div class="card-body" id="featuredBeerBody">
           <h5 class="card-title">Featured Beer</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary" id="featuredButton">Learn More</a>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
+      <div class="card" style="width: 320px;" id="randomBeer">
+        <img src="./assets/beer-img/bourbon-barrel-stout.jpg" class="card-img-top" alt="Random Beer" id="randomBeerIMG">
+        <div class="card-body" id="randomBeerBody">
           <h5 class="card-title">Random Beer</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary" id="randomButton">Learn More</a>
         </div>
       </div>
 
