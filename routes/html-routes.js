@@ -46,4 +46,11 @@ module.exports = app => {
       firstName: req.user.firstName
     });
   });
+
+  app.get("/signup", (req,res)=> {
+    console.log ("getting page");
+    res.render("signup")
+  });
+
+
 };
