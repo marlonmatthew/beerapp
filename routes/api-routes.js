@@ -1,19 +1,18 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
-const passport = require("../config/passport");
-const beer = require("../models/BeerApp");
+// const passport = require("../config/passport");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
-  app.post("/api/login", passport.authenticate("local"), (req, res) => {
-    // Sending back a password, even a hashed password, isn't a good idea
-    res.json({
-      email: req.user.email,
-      id: req.user.id
-    });
-  });
+  // app.post("/api/login", passport.authenticate("local"), (req, res) => {
+  //   // Sending back a password, even a hashed password, isn't a good idea
+  //   res.json({
+  //     email: req.user.email,
+  //     id: req.user.id
+  //   });
+  // });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
@@ -54,28 +53,12 @@ module.exports = function(app) {
 
   //Route for getting a beer from database at random for featured beer card
   app.get("/api/featured_beer", (req, res) => {
-    //TODO Have max value (100) generate from size of database
-    const randomNumber = Math.floor(Math.random() * Math.floor(100));
-    beer
-      .findOne({
-        where: {
-          id: randomNumber
-        }
-      })
-      .then(result => res.JSON(result));
+    res.JSON(getRandomBeer());
   });
 
   //Route for getting a beer from database at random for featured beer card
-  app.get("/api/random_beer", (req, res) => {
-    //TODO Have max value (100) generate from size of database
-    const randomNumber = Math.floor(Math.random() * Math.floor(100));
-    beer
-      .findOne({
-        where: {
-          id: randomNumber
-        }
-      })
-      .then(result => res.JSON(result));
+  app.get("/api/random_beer", async (req, res) => {
+    res.json(await getRandomBeer());
   });
 
   //Route for getting entire beer list from database
@@ -83,3 +66,21 @@ module.exports = function(app) {
     beer.findAll({}).then(result => res.JSON(result));
   });
 };
+
+//Funtion returns element from database at random
+function getRandomBeer() {
+  return new Promise(resolve => {
+    //TODO Have max value (100) generate from size of database
+    //sequilize documentation on size of db
+    const randomNumber = Math.floor(Math.random() * Math.floor(100));
+    db.beer
+      .findOne({
+        where: {
+          id: randomNumber
+        }
+      })
+      .then(result => {
+        return resolve(result);
+      });
+  });
+}
