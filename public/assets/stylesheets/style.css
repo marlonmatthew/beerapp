@@ -18,10 +18,13 @@ form.login {
   color: white;
   position: absolute;
   top: 50%;
-  left: 8%;
   transform: translateY(-50%);
   z-index: 2;
-  text-align: justify;
+}
+
+#age,
+#Notage {
+  margin-top: 20px;
 }
 
 button {
@@ -34,24 +37,18 @@ button {
   cursor: pointer;
 }
 
-h2 {
-  font-size: 80px;
-  margin: 10 0 30px;
-  line-height: 80px;
-}
-
 .stars img {
   width: 50px;
   animation: star 7s linear infinite;
 }
 
 .stars {
-  width: 1000px;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  bottom: -70px;
+  bottom: 0px;
 }
 
 @keyframes star {
@@ -72,28 +69,28 @@ h2 {
 }
 
 .stars img:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: -2s;
 }
 .stars img:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: -1s;
 }
 .stars img:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: -3s;
 }
 .stars img:nth-child(4) {
-  animation-delay: 4s;
+  animation-delay: -4s;
 }
 .stars img:nth-child(5) {
-  animation-delay: 6s;
+  animation-delay: -6s;
 }
 .stars img:nth-child(6) {
-  animation-delay: 3s;
+  animation-delay: -7s;
 }
 .stars img:nth-child(7) {
-  animation-delay: 4s;
+  animation-delay: -8s;
 }
 .stars img:nth-child(8) {
-  animation-delay: 5s;
+  animation-delay: -5s;
 }
 
 #welcomeHeader {
