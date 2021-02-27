@@ -1,4 +1,7 @@
-document.getElementById("age").addEventListener("click", myFunction);
+const age = document.getElementById("age");
+if (age) {
+  age.addEventListener("click", myFunction);
+}
 
 function myFunction() {
   const bdayInput = document.getElementById("bday").value;
@@ -22,9 +25,10 @@ function getRandomBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json"
-    }
-  }).then(response => {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => {
+    console.log("another beer!");
     console.log(response);
   });
 }
@@ -38,9 +42,14 @@ function getFeaturedBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     }
   }).then(response => {
     console.log(response);
   });
 }
+// document.getElementById("beerList").addEventListener("click", getBeerList);
+
+// function getBeerList() {
+//   window.location.href = "/list";
+// }

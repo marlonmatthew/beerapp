@@ -11,7 +11,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <a class="nav-link" href="#">Beer List</a>
+        <a class="nav-link" href="/list">Beer List</a>
         <a class="nav-link" href="#">Profile</a>
         <a class="nav-link" href="#">Log Out</a>
       </form>
@@ -24,7 +24,7 @@
   <div class="row">
 
     <div class="col-10">
-      <h1 id="welcomeHeader">Welcome, {{firstName}}</h1>
+      <h1 id="welcomeHeader">Welcome, {{name}}</h1>
       <div id="welcomeSection">
         <h5>
           Hello username!
@@ -37,11 +37,11 @@
 
       <div id="beerSelector">
         <h5>Find a beer:</h5>
-        <form>
+        <form action="/filterlist">
 
           <div class="form-group">
             <label for="FormControlSelect1" id="label1">Select an ABV% range:</label>
-            <select multiple class="form-control" id="FormControlSelect1">
+            <select multiple class="form-control" id="FormControlSelect1" name="abv">
               <option>Low</option>
               <option>Med</option>
               <option>High</option>
@@ -51,7 +51,7 @@
 
           <div class="form-group">
             <label for="FormControlSelect2" id="label2">Select a flavor:</label>
-            <select multiple class="form-control" id="FormControlSelect2">
+            <select multiple class="form-control" id="FormControlSelect2"name="flavor">
               <option>Ale</option>
               <option>Berliner Weisse</option>
               <option>Gose</option>
@@ -81,11 +81,13 @@
       </div>
 
       <div class="card" style="width: 320px;" id="randomBeer">
-        <img src="./assets/beer-img/bourbon-barrel-stout.jpg" class="card-img-top" alt="Random Beer" id="randomBeerIMG">
+        <img src="{{image}}" class="card-img-top" alt="Random Beer" id="randomBeerIMG">
         <div class="card-body" id="randomBeerBody">
           <h5 class="card-title">Random Beer</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+          <h5>{{name}}</h5>
+          <h4>{{brewery}}</h4>
+          <h4>{{flavor}}</h4>
+          <h4>{{abv}}</h4>
           <a href="#" class="btn btn-primary" id="randomButton">Learn More</a>
         </div>
       </div>

@@ -21,11 +21,16 @@
 
 <h1>Beer List!</h1>
 
-<ul>
+
+<div class="container">
+  <div class="row">
     {{#each beer}}
-    {{> beerCard/beer-card}}
+    <div class="col-sm-3">
+      {{> beerCard/beer-card}}
+    </div>
     {{/each}}
-</ul>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/assets/js/beer.js"></script>
