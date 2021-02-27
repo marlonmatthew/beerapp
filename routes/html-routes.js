@@ -3,12 +3,12 @@
 // const { nextTick } = require("process");
 // const authRoutes = require("./authRoutes");
 
-const isAuth = (req, res, next) => {
-  if (!req.isAuthenticated()) {
-    return res.redirect(401, "/login");
-  }
-  next();
-};
+// const isAuth = (req, res, next) => {
+//   if (!req.isAuthenticated()) {
+//     return res.redirect(401, "/login");
+//   }
+//   next();
+// };
 
 module.exports = app => {
   app.get("/", (req, res) => {
@@ -29,22 +29,9 @@ module.exports = app => {
     // res.sendFile(path.join(__dirname, "/login.handlebars"));
   });
 
-  app.get("/login", (req, res) => {
-    console.log("this is in html routes");
-    res.render("index");
-
-    // res.sendFile(path.join(__dirname, "../views/index.handlebars"));
-  });
-
-  app.post("/index", (req, res) => {
+  app.get("/members", (req, res) => {
     console.log("getting the page");
-    res.render("index");
-  });
-
-  app.get("/login", isAuth, (req, res) => {
-    res.render("index", {
-      firstName: req.user.firstName
-    });
+    res.render("members");
   });
 
   app.get("/signup", (req, res) => {
