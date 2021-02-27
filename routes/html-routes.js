@@ -31,6 +31,7 @@ module.exports = app => {
 
   app.get("/members", (req, res) => {
     console.log("getting the page");
+
     res.render("members");
   });
 
