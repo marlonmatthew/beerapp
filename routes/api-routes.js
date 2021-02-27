@@ -7,7 +7,7 @@ module.exports = function(app) {
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
-    // Sending back a password, even a hashed password, isn't a good idea
+    // Sending back a password, even a hashed password
     res.json({
       email: req.user.email,
       id: req.user.id
@@ -20,18 +20,20 @@ module.exports = function(app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
+      name: req.body.name,
       password: req.body.password
     })
       .then(() => {
         res.redirect(307, "/api/login");
       })
       .catch(err => {
+        console.log ("err", err)
         res.status(401).json(err);
       });
   });
 
   // Route for logging user out
-  app.get("/logout", (req, res) => {
+  app.get("/members", (req, res) => {
     req.logout();
     res.redirect("/");
   });

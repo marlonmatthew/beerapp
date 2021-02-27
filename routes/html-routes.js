@@ -1,3 +1,4 @@
+const isAuthenticated= require("../config/middleware/isAuthenticated.js")
 // Requiring path to so we can use relative routes to our HTML files
 // const path = require("path");
 // const { nextTick } = require("process");
@@ -29,9 +30,9 @@ module.exports = app => {
     // res.sendFile(path.join(__dirname, "/login.handlebars"));
   });
 
-  app.get("/members", (req, res) => {
+  app.get("/members", isAuthenticated, (req, res) => {
     console.log("getting the page");
-    res.render("members");
+    res.render("members", { name: req.user.name });
   });
 
   app.get("/signup", (req, res) => {
