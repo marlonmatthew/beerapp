@@ -84,3 +84,8 @@ function getRandomBeer() {
       });
   });
 }
+
+//get count of total number of items in database
+const { count, rows } = await db.beer.findAndCountAll({});
+console.log(count);
+console.log(rows);
