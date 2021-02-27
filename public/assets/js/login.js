@@ -5,9 +5,10 @@ const errorToString = e => {
   return e.toString();
 };
 
-loginButton.addEventListener("click", () => {
-  const emailInput = document.getElementById("email").value.trim();
-  const passwordInput = document.getElementById("password").value.trim();
+loginButton.addEventListener("click", e => {
+  e.preventDefault();
+  const emailInput = document.getElementById("email-input").value.trim();
+  const passwordInput = document.getElementById("password-input").value.trim();
 
   loginButton.classList.add("is-loading");
 
@@ -36,7 +37,7 @@ loginButton.addEventListener("click", () => {
     .then(() => {
       loginButton.classList.remove("is-loading");
 
-      window.location.href = "/index";
+      window.location.replace("/members");
     })
     .catch(error => {
       if (errorToString(error) === "401") {
@@ -44,6 +45,6 @@ loginButton.addEventListener("click", () => {
       }
     });
 });
-//signup
-signUpuser(userData.email, userData.password);
-emailInput.val();
+// //signup
+// signUpuser(userData.email, userData.password);
+// emailInput.val();
