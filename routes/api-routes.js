@@ -10,7 +10,7 @@ module.exports = function(app) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
-      id: req.user.id,
+      id: req.user.id
     });
   });
 
@@ -21,12 +21,12 @@ module.exports = function(app) {
     db.User.create({
       email: req.body.email,
       name: req.body.name,
-      password: req.body.password,
+      password: req.body.password
     })
       .then(() => {
         res.redirect(307, "/api/login");
       })
-      .catch((err) => {
+      .catch(err => {
         res.status(401).json(err);
       });
   });
@@ -95,10 +95,10 @@ function getRandomBeer() {
     db.beer
       .findOne({
         where: {
-          id: randomNumber,
-        },
+          id: randomNumber
+        }
       })
-      .then((result) => {
+      .then(result => {
         return resolve(result);
       });
   });

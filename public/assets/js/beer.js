@@ -25,9 +25,9 @@ function getRandomBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-  }).then((response) => {
+      "Content-Type": "application/json"
+    }
+  }).then(response => {
     console.log("another beer!");
     console.log(response);
   });
@@ -42,7 +42,7 @@ function getFeaturedBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     }
   }).then(response => {
     console.log(response);
