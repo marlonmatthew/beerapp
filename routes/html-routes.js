@@ -1,4 +1,4 @@
-const isAuthenticated= require("../config/middleware/isAuthenticated.js")
+const isAuthenticated = require("../config/middleware/isAuthenticated.js");
 // Requiring path to so we can use relative routes to our HTML files
 // const path = require("path");
 // const { nextTick } = require("process");
