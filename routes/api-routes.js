@@ -60,12 +60,30 @@ module.exports = function(app) {
 
   //Route for getting a beer from database at random for featured beer card
   app.get("/api/random_beer", async (req, res) => {
-    res.json(await getRandomBeer());
+    const randomBeer = await getRandomBeer();
+    console.log("Random!");
+    console.log(randomBeer);
+    // res.render("member", randomBeer);
+    res.json(randomBeer);
   });
 
   //Route for getting entire beer list from database
-  app.get("/api/list", (req, res) => {
-    beer.findAll({}).then(result => res.JSON(result));
+  app.get("/list", (req, res) => {
+    db.beer.findAll({ raw: true }).then(result => {
+      console.log(`Result: ${result}`);
+      res.render("list", { beer: result });
+    });
+  });
+
+  app.get("/filterlist", (req, res) => {
+    db.beer
+      .findAll({
+        where: {
+          class: req.body.abv,
+          flavor: req.body.flavor
+        }
+      })
+      .then(result => res.render("list", result));
   });
 };
 
@@ -74,7 +92,7 @@ function getRandomBeer() {
   return new Promise(resolve => {
     //TODO Have max value (100) generate from size of database
     //sequilize documentation on size of db
-    const randomNumber = Math.floor(Math.random() * Math.floor(100));
+    const randomNumber = Math.floor(Math.random() * Math.floor(90));
     db.beer
       .findOne({
         where: {
@@ -86,3 +104,8 @@ function getRandomBeer() {
       });
   });
 }
+
+//get count of total number of items in database
+// const { count, rows } = await db.beer.findAndCountAll({});
+// console.log(count);
+// console.log(rows);

@@ -1,5 +1,8 @@
-document.getElementById("age").addEventListener("click", myFunction);
-console.log("This is running");
+const age = document.getElementById("age");
+if (age) {
+  age.addEventListener("click", myFunction);
+}
+
 function myFunction() {
   const bdayInput = document.getElementById("bday").value;
   const today = new Date();
@@ -18,7 +21,24 @@ function myFunction() {
 document.getElementById("randomBeer").addEventListener("click", getRandomBeer);
 
 function getRandomBeer() {
-  fetch("/api/frandom_beer", {
+  fetch("/api/random_beer", {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    }
+  }).then(response => {
+    console.log("another beer!");
+    console.log(response);
+  });
+}
+
+document
+  .getElementById("featuredBeer")
+  .addEventListener("click", getFeaturedBeer);
+
+function getFeaturedBeer() {
+  fetch("/api/featured_beer", {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -28,3 +48,8 @@ function getRandomBeer() {
     console.log(response);
   });
 }
+// document.getElementById("beerList").addEventListener("click", getBeerList);
+
+// function getBeerList() {
+//   window.location.href = "/list";
+// }
