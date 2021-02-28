@@ -6,12 +6,32 @@ form.login {
 .screen {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/drink.jpg);
+  background: url(../images/drink.jpg) no-repeat center center fixed;
   background-position: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+
+.bg-light {
+  background-color: #474747 !important;
+}
+
+#bgColor {
+  background-color: #231f1d;
+}
+
+#beerMe {
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#navLinks {
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  color: #e77103;
 }
 
 .welcome {
@@ -22,19 +42,33 @@ form.login {
   z-index: 2;
 }
 
+#signUplink {
+  color: #e77103;
+}
+
 #age,
 #Notage {
   margin-top: 20px;
 }
 
-button {
-  color: #fbfcfd;
-  padding: 10px 25px;
-  background: transparent;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  outline: none;
-  cursor: pointer;
+#loginText,
+#signUpHeader {
+  margin-bottom: -20px;
+}
+
+.form-check-input:checked {
+  background-color: #e77103;
+  border-color: #e77103;
+}
+
+#selectText {
+  margin-top: 20px;
+}
+
+#email-input,
+#password-input,
+#name-input {
+  width: 300px;
 }
 
 .stars img {
@@ -49,6 +83,16 @@ button {
   justify-content: space-around;
   position: absolute;
   bottom: 0px;
+}
+
+#nameField,
+#passwordField {
+  margin-top: 20px;
+}
+
+#signUptext,
+#loginText2 {
+  margin-top: 20px;
 }
 
 @keyframes star {
@@ -93,29 +137,34 @@ button {
   animation-delay: -5s;
 }
 
+#login-button,
+#signUpButton {
+  margin-top: 30px;
+}
+
 #welcomeHeader {
   margin-top: 30px;
   margin-bottom: 30px;
+  color: white;
 }
 
 #welcomeSection {
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  color: white;
 }
 
 #beerSelector {
   margin-top: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px rgb(24, 24, 24);
+  border-radius: 10px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  color: white;
 }
 
 #label1 {
@@ -140,18 +189,53 @@ button {
 
 #featuredBeer {
   margin-top: 40px;
+  background-color: #231f1d;
+  color: white;
 }
 
 #randomBeer {
   margin-top: 20px;
+  background-color: #231f1d;
+  color: white;
+}
+
+.card-img-top {
+  margin-top: 20px;
+  height: auto;
+  width: auto;
 }
 
 #featuredBeerIMG {
-  width: 320px;
-  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
 #randomBeerIMG {
   width: 320px;
   height: 200px;
+}
+
+.card {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px rgb(24, 24, 24);
+  border-radius: 10px;
+}
+
+#beerGuide {
+  margin-top: 20px;
+  color: white;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px rgb(24, 24, 24);
+  border-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 12px;
+}
+
+#aside {
+  margin-left: auto;
+  margin-right: auto;
 }
