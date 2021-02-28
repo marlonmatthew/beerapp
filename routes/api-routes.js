@@ -7,7 +7,7 @@ module.exports = function(app) {
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
-    // Sending back a password, even a hashed password, isn't a good idea
+    // Sending back a password, even a hashed password
     res.json({
       email: req.user.email,
       id: req.user.id
@@ -20,18 +20,20 @@ module.exports = function(app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
+      name: req.body.name,
       password: req.body.password
     })
       .then(() => {
         res.redirect(307, "/api/login");
       })
       .catch(err => {
+        console.log("err", err);
         res.status(401).json(err);
       });
   });
 
   // Route for logging user out
-  app.get("/logout", (req, res) => {
+  app.get("/members", (req, res) => {
     req.logout();
     res.redirect("/");
   });
@@ -58,12 +60,30 @@ module.exports = function(app) {
 
   //Route for getting a beer from database at random for featured beer card
   app.get("/api/random_beer", async (req, res) => {
-    res.json(await getRandomBeer());
+    const randomBeer = await getRandomBeer();
+    console.log("Random!");
+    console.log(randomBeer);
+    // res.render("member", randomBeer);
+    res.json(randomBeer);
   });
 
   //Route for getting entire beer list from database
-  app.get("/api/list", (req, res) => {
-    beer.findAll({}).then(result => res.JSON(result));
+  app.get("/list", (req, res) => {
+    db.beer.findAll({ raw: true }).then(result => {
+      console.log(`Result: ${result}`);
+      res.render("list", { beer: result });
+    });
+  });
+
+  app.get("/filterlist", (req, res) => {
+    db.beer
+      .findAll({
+        where: {
+          class: req.body.abv,
+          flavor: req.body.flavor
+        }
+      })
+      .then(result => res.render("list", result));
   });
 };
 
@@ -72,7 +92,7 @@ function getRandomBeer() {
   return new Promise(resolve => {
     //TODO Have max value (100) generate from size of database
     //sequilize documentation on size of db
-    const randomNumber = Math.floor(Math.random() * Math.floor(100));
+    const randomNumber = Math.floor(Math.random() * Math.floor(90));
     db.beer
       .findOne({
         where: {
@@ -84,3 +104,8 @@ function getRandomBeer() {
       });
   });
 }
+
+//get count of total number of items in database
+// const { count, rows } = await db.beer.findAndCountAll({});
+// console.log(count);
+// console.log(rows);
