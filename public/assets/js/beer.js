@@ -12,7 +12,13 @@ function myFunction() {
 
   const age = parseInt(thisYear) - parseInt(bdYear);
   console.log(`age ${age}`);
-  if (age > 21) {
+  if (
+    age > 21 ||
+    (age === 21 &&
+      (dirth.getMonth() < today.getMonth() ||
+        (dirth.getMonth() === today.getMonth() &&
+          dirth.getDay() <= today.getDay())))
+  ) {
     window.location.href = "/login";
   }
   console.log("nope! not of age");
@@ -42,9 +48,9 @@ function getFeaturedBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json"
-    }
-  }).then(response => {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => {
     console.log(response);
   });
 }
