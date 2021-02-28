@@ -53,3 +53,9 @@ function getFeaturedBeer() {
 // function getBeerList() {
 //   window.location.href = "/list";
 // }
+//Not over 21 will send you to the alcohol.org/laws/ page.
+const Notage = document.getElementById("Notage");
+if (Notage){
+  Notage.addEventListener("click", laws);
+}
+
