@@ -53,9 +53,9 @@ module.exports = function(app) {
   });
 
   //Route for getting a beer from database at random for featured beer card
-  app.get("/api/featured_beer", (req, res) => {
-    res.JSON(getRandomBeer());
-  });
+  // app.get("/api/featured_beer", (req, res) => {
+  //   res.JSON(getRandomBeer());
+  // });
 
   //Route for getting a beer from database at random for featured beer card
   app.get("/api/random_beer", async (req, res) => {
@@ -69,20 +69,24 @@ module.exports = function(app) {
   //Route for getting entire beer list from database
   app.get("/list", (req, res) => {
     db.beer.findAll({ raw: true }).then(result => {
-      console.log(`Result: ${result}`);
+      console.table(result);
       res.render("list", { beer: result });
     });
   });
 
-  app.get("/filterlist", (req, res) => {
+  app.get("/api/filterBeers/:abv/:flavor", (req, res) => {
     db.beer
       .findAll({
+        raw: true,
         where: {
-          class: req.body.abv,
-          flavor: req.body.flavor
+          class: req.params.abv,
+          flavor: req.params.flavor
         }
       })
-      .then(result => res.render("list", result));
+      .then(data => {
+        console.table(data);
+        res.render("list", { beer: data });
+      });
   });
 };
 
