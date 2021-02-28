@@ -41,51 +41,51 @@
 
       <div id="beerSelector">
         <h5>Find a beer!</h5>
-        <form action="/filterlist">
+        <form id="filterBeers">
 
           <h6 id="selectText">Select an ABV% range:</h6>
 
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="abvPerc" id="abvPerc" value="Low">
             <label class="form-check-label" for="inlineRadio1">Low (less than 5%)</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="abvPerc" id="abvPerc" value="Medium">
             <label class="form-check-label" for="inlineRadio2">Medium (5% to 5.9%)</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <input class="form-check-input" type="radio" name="abvPerc" id="abvPerc" value="High">
             <label class="form-check-label" for="inlineRadio3">High (6% to 7.9%)</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+            <input class="form-check-input" type="radio" name="abvPerc" id="abvPerc" value="Very High">
             <label class="form-check-label" for="inlineRadio4">Very High (8% or more)</label>
           </div>
 
           <h6 id="selectText">Select a flavor:</h6>
 
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="flavorRadio" id="flavorRadio" value="Ale">
             <label class="form-check-label" for="inlineRadio1">Ale</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="flavorRadio" id="flavorRadio" value="Berliner Weisse">
             <label class="form-check-label" for="inlineRadio2">Berliner Weisse</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <input class="form-check-input" type="radio" name="flavorRadio" id="flavorRadio" value="Gose">
             <label class="form-check-label" for="inlineRadio3">Gose</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+            <input class="form-check-input" type="radio" name="flavorRadio" id="flavorRadio" value="IPA">
             <label class="form-check-label" for="inlineRadio4">IPA</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+            <input class="form-check-input" type="radio" name="flavorRadio" id="flavorRadio" value="Porter">
             <label class="form-check-label" for="inlineRadio5">Porter</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+            <input class="form-check-input" type="radio" name="flavorRadio" id="flavorRadio" value="Stout">
             <label class="form-check-label" for="inlineRadio6">Stout</label>
           </div>
           <div>
@@ -120,25 +120,27 @@
     <div class="col-sm-auto" id="aside">
 
       <div class="card" style="width: 325px;" id="featuredBeer">
-        <img src="./assets/beer-img/cherry-apricot-vanilla.jpeg" class="card-img-top" alt="Featured Beer"
+        <img src="" class="card-img-top" alt="Featured Beer" id="featuredBeerIMG"
           id="featuredBeerIMG">
         <div class="card-body" id="featuredBeerBody">
           <h5 class="card-title">Featured Beer</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+          <h5 id="fName"></h5>
+          <p id="fBrewery"></p>
+          <p id="fFlavor"></p>
+          <p id="fABV"></p>
           <a href="#" class="btn btn-light" id="featuredButton">Learn More</a>
         </div>
       </div>
 
       <div class="card" style="width: 325px;" id="randomBeer">
-        <img src="{{image}}" class="card-img-top" alt="Random Beer" id="randomBeerIMG">
+        <img src="" class="card-img-top" alt="Random Beer" id="randomBeerIMG">
         <div class="card-body" id="randomBeerBody">
           <h5 class="card-title">Random Beer</h5>
-          <h5>{{name}}</h5>
-          <h4>{{brewery}}</h4>
-          <h4>{{flavor}}</h4>
-          <h4>{{abv}}</h4>
-          <a href="#" class="btn btn-light" id="randomButton">Learn More</a>
+          <h5 id="rName"></h5>
+          <p id="rBrewery"></p>
+          <p id="rFlavor"></p>
+          <p id="rABV"></p>
+          <a href="#" class="btn btn-light" id="randomBeer">Get Random Beer</a>
         </div>
       </div>
 
