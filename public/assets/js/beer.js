@@ -11,7 +11,6 @@ function myFunction() {
   const bdYear = dirth.getFullYear();
 
   const age = parseInt(thisYear) - parseInt(bdYear);
-  console.log(`age ${age}`);
   if (
     age > 21 ||
     (age === 21 &&
@@ -20,13 +19,15 @@ function myFunction() {
           dirth.getDay() <= today.getDay())))
   ) {
     window.location.href = "/login";
+  } else {
+    alert("Must be over 21 to access this site.");
   }
-  console.log("nope! not of age");
 }
 
 document.getElementById("randomBeer").addEventListener("click", getRandomBeer);
 
 function getRandomBeer() {
+  // e.preventDefault();
   fetch("/api/random_beer", {
     method: "GET",
     headers: {
@@ -71,43 +72,6 @@ function getFeaturedBeer() {
       flavor.textContent = data.flavor;
       abv.textContent = data.abv;
     });
-}
-
-const filterBeerList = document.getElementById("filterBeers");
-
-if (filterBeerList) {
-  filterBeerList.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const abvList = document.getElementsByName("abvPerc");
-    const flavorList = document.getElementsByName("flavorRadio");
-    let abv = "";
-    let flavor = "";
-    for (let i = 0, length = abvList.length; i < length; i++) {
-      if (abvList[i].checked) {
-        abv = abvList[i].value;
-        break;
-      }
-    }
-    for (let i = 0, length = flavorList.length; i < length; i++) {
-      if (flavorList[i].checked) {
-        flavor = flavorList[i].value;
-        break;
-      }
-    }
-
-    // const filterBeer = {
-    //   avb: abv,
-    //   flavor: flavor
-    // };
-    // console.log(filterBeer);
-    fetch(`/api/filterBeers/${abv}/${flavor}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }); /*.then would go here*/
-  });
 }
 
 getFeaturedBeer();
