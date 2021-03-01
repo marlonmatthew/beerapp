@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<html id="bgColor">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light" id="navbarMenu">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/members">Gental Drinkers</a>
+    <a class="navbar-brand" href="/" id="beerMe">Gentle Drinkers</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,18 +12,15 @@
         </li>
       </ul>
       <form class="d-flex">
-        <a class="nav-link" href="#">Beer List</a>
-        <a class="nav-link" href="/members">Profile</a>
-        <a class="nav-link" href="/">Log Out</a>
+        <a class="nav-link" href="/list" id="navLinks">Beer List</a>
+        <a class="nav-link" href="/members" id="navLinks">Profile</a>
+        <a class="nav-link" href="/" id="navLinks">Log Out</a>
       </form>
     </div>
   </div>
 </nav>
 
-<h1>Beer List!</h1>
-
-
-<div class="container">
+<div class="container" id="beerListCards">
   <div class="row">
     {{#each beer}}
     <div class="col-sm-3">

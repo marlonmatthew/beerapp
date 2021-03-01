@@ -50,6 +50,7 @@ function getRandomBeer() {
       const abv = document.getElementById("rABV");
 
       beerImg.src = data.image;
+      console.log(data.image);
       beerName.textContent = data.name;
       brewery.textContent = data.brewery;
       flavor.textContent = data.flavor;
@@ -74,6 +75,7 @@ function getFeaturedBeer() {
       const abv = document.getElementById("fABV");
 
       beerImg.src = data.image;
+      console.log(data.image);
       beerName.textContent = data.name;
       brewery.textContent = data.brewery;
       flavor.textContent = data.flavor;
