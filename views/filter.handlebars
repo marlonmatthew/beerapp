@@ -11,7 +11,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <a class="nav-link" href="#">Beer List</a>
+        <a class="nav-link" href="/list">Beer List</a>
         <a class="nav-link" href="/members">Profile</a>
         <a class="nav-link" href="/">Log Out</a>
       </form>
@@ -19,7 +19,7 @@
   </div>
 </nav>
 
-<h1>Beer List!</h1>
+<h1>Here is your filtered list!</h1>
 
 
 <div class="container">
@@ -28,6 +28,8 @@
     <div class="col-sm-3">
       {{> beerCard/beer-card}}
     </div>
+    {{else}}
+    <h4>No Beers found - <a href="/members">Go back from where you came from</a></h4>
     {{/each}}
   </div>
 </div>
