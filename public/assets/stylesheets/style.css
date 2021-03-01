@@ -16,15 +16,21 @@ h5 {
 }
 
 p {
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
-.h1, h1 {
+.h1,
+h1 {
   font-size: 50px;
 }
 
-.h4, h4 {
-  font-family: 'Prompt', sans-serif;
+.h4,
+h4 {
+  font-family: "Prompt", sans-serif;
+}
+
+.h5, h5 {
+  font-size: 25px;
 }
 
 .screen {
@@ -75,7 +81,7 @@ p {
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   color: #e77103;
   font-size: 20px;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 .welcome {
@@ -341,7 +347,7 @@ p {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 #ageBox {
