@@ -30,11 +30,11 @@ function getRandomBeer() {
   fetch("/api/random_beer", {
     method: "GET",
     headers: {
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    },
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const beerImg = document.getElementById("randomBeerIMG");
       const beerName = document.getElementById("rName");
       const brewery = document.getElementById("rBrewery");
@@ -49,20 +49,16 @@ function getRandomBeer() {
     });
 }
 
-document
-  .getElementById("featuredBeer")
-  .addEventListener("click", getFeaturedBeer);
-
 function getFeaturedBeer() {
   fetch("/api/random_beer", {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    },
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const beerImg = document.getElementById("featuredBeerIMG");
       const beerName = document.getElementById("fName");
       const brewery = document.getElementById("fBrewery");
@@ -80,7 +76,7 @@ function getFeaturedBeer() {
 const filterBeerList = document.getElementById("filterBeers");
 
 if (filterBeerList) {
-  filterBeerList.addEventListener("submit", e => {
+  filterBeerList.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const abvList = document.getElementsByName("abvPerc");
@@ -108,8 +104,8 @@ if (filterBeerList) {
     fetch(`/api/filterBeers/${abv}/${flavor}`, {
       method: "GET",
       headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     }); /*.then would go here*/
   });
 }
