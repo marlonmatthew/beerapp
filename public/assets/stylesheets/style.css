@@ -3,13 +3,28 @@ form.login {
   margin-top: 50px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Bebas Neue', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", cursive;
 }
 
 h5 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   text-align: center;
+}
+
+p {
+  font-family: 'Prompt', sans-serif;
+}
+
+.h1, h1 {
+  font-size: 50px;
+}
+
+.h4, h4 {
+  font-family: 'Prompt', sans-serif;
 }
 
 .screen {
@@ -35,12 +50,32 @@ h5 {
 }
 
 #beerMe {
+  text-align: center;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+  color: #e77103;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e77103,
+      0 0 40px #e77103, 0 0 50px #e77103, 0 0 60px #e77103, 0 0 70px #e77103;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e77103,
+      0 0 50px #e77103, 0 0 60px #e77103, 0 0 70px #e77103, 0 0 80px #e77103;
+  }
 }
 
 #navLinks {
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   color: #e77103;
+  font-size: 20px;
+  font-family: 'Prompt', sans-serif;
 }
 
 .welcome {
@@ -153,8 +188,8 @@ h5 {
 
 #welcomeHeader {
   margin-top: 30px;
-  margin-bottom: 30px;
   color: white;
+  padding: 10px;
 }
 
 #welcomeSection {
@@ -224,10 +259,6 @@ h5 {
   margin-right: auto;
   border-radius: 5px;
   border: 3px solid #e77103;
-<<<<<<< HEAD
-  /* padding: 10px; */
-=======
->>>>>>> 37e90fea9f166f7cbba33d3b0e6e8c8a973d28e6
 }
 
 #randomBeerIMG {
@@ -235,9 +266,6 @@ h5 {
   margin-right: auto;
   border-radius: 5px;
   border: 3px solid #e77103;
-<<<<<<< HEAD
-  /* padding: 10px; */
-=======
 }
 
 #beerListIMG {
@@ -245,7 +273,6 @@ h5 {
   margin-right: auto;
   display: block;
   border-radius: 5px;
->>>>>>> 37e90fea9f166f7cbba33d3b0e6e8c8a973d28e6
 }
 
 .card {
@@ -300,11 +327,9 @@ h5 {
 #fABV,
 #listOther {
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
 }
 
-<<<<<<< HEAD
-=======
 #beerListCards {
   margin-top: 30px;
 }
@@ -312,5 +337,13 @@ h5 {
 #randomBeer {
   margin-top: 10px;
   font-size: medium;
+  color: whitesmoke;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: 'Prompt', sans-serif;
 }
->>>>>>> 37e90fea9f166f7cbba33d3b0e6e8c8a973d28e6
+
+#ageBox {
+  padding: 10px;
+}
