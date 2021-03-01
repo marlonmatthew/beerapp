@@ -7,7 +7,7 @@ module.exports = function(app) {
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
-    // Sending back a password, even a hashed password
+    // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
       id: req.user.id
@@ -27,13 +27,12 @@ module.exports = function(app) {
         res.redirect(307, "/api/login");
       })
       .catch(err => {
-        console.log("err", err);
         res.status(401).json(err);
       });
   });
 
   // Route for logging user out
-  app.get("/members", (req, res) => {
+  app.get("/logout", (req, res) => {
     req.logout();
     res.redirect("/");
   });
@@ -54,9 +53,9 @@ module.exports = function(app) {
   });
 
   //Route for getting a beer from database at random for featured beer card
-  app.get("/api/featured_beer", (req, res) => {
-    res.JSON(getRandomBeer());
-  });
+  // app.get("/api/featured_beer", (req, res) => {
+  //   res.JSON(getRandomBeer());
+  // });
 
   //Route for getting a beer from database at random for featured beer card
   app.get("/api/random_beer", async (req, res) => {
@@ -70,20 +69,24 @@ module.exports = function(app) {
   //Route for getting entire beer list from database
   app.get("/list", (req, res) => {
     db.beer.findAll({ raw: true }).then(result => {
-      console.log(`Result: ${result}`);
+      console.table(result);
       res.render("list", { beer: result });
     });
   });
 
-  app.get("/filterlist", (req, res) => {
+  app.get("/api/filterBeers/:abv/:flavor", (req, res) => {
     db.beer
       .findAll({
+        raw: true,
         where: {
-          class: req.body.abv,
-          flavor: req.body.flavor
+          class: req.params.abv,
+          flavor: req.params.flavor
         }
       })
-      .then(result => res.render("list", result));
+      .then(data => {
+        console.table(data);
+        res.render("list", { beer: data });
+      });
   });
 };
 
