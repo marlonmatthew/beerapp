@@ -196,13 +196,13 @@ h5 {
   margin-top: 20px;
 }
 
-#featuredBeer {
+#featuredBeerCard {
   margin-top: 40px;
   background-color: #231f1d;
   color: white;
 }
 
-#randomBeer {
+#randomBeerCard {
   margin-top: 20px;
   background-color: #231f1d;
   color: white;
@@ -220,15 +220,27 @@ h5 {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 /* #randomBeerIMG {
   width: 320px;
   height: 200px;
 } */
+=======
+#randomBeerIMG {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+>>>>>>> 15500838342c6bfbb9ef4afab286aca7f5f5403e
 
 .card {
   border: 2px solid rgb(0, 0, 0);
   box-shadow: 2px 2px 2px rgb(24, 24, 24);
   border-radius: 10px;
+}
+
+.card-title {
+  text-align: center;
 }
 
 #beerGuide {
@@ -249,19 +261,19 @@ h5 {
   margin-right: auto;
 }
 
-.container img {
-  margin: auto;
-  width: 50%;
-  border: 3px solid #e77103;
-  padding: 10px;
+@media (max-width: 767.98px) {
+  #bday {
+    width: 90%;
+  }
 }
 
-#fBrewery, #fFlavor, #rBrewery, #rFlavor, #fABV, #rABV {
-  text-align: center;
-}
-
-.card-title {
+#rName,
+#rBrewery,
+#rFlavor,
+#rABV,
+#fName,
+#fBrewery,
+#fFlavor,
+#fABV {
   font-weight: bold;
-  color: #e77103;
-  font-size: 30px;
 }
