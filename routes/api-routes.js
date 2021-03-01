@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+// const { resolveConfigFile } = require("prettier");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -53,39 +54,29 @@ module.exports = function(app) {
   });
 
   //Route for getting a beer from database at random for featured beer card
-  // app.get("/api/featured_beer", (req, res) => {
-  //   res.JSON(getRandomBeer());
-  // });
-
-  //Route for getting a beer from database at random for featured beer card
   app.get("/api/random_beer", async (req, res) => {
     const randomBeer = await getRandomBeer();
-    console.log("Random!");
-    console.log(randomBeer);
-    // res.render("member", randomBeer);
     res.json(randomBeer);
   });
 
   //Route for getting entire beer list from database
   app.get("/list", (req, res) => {
     db.beer.findAll({ raw: true }).then(result => {
-      console.table(result);
       res.render("list", { beer: result });
     });
   });
 
-  app.get("/api/filterBeers/:abv/:flavor", (req, res) => {
+  app.get("/api/filter", (req, res) => {
     db.beer
       .findAll({
         raw: true,
         where: {
-          class: req.params.abv,
-          flavor: req.params.flavor
+          class: req.query.abvPerc,
+          flavor: req.query.flavorRadio
         }
       })
       .then(data => {
-        console.table(data);
-        res.render("list", { beer: data });
+        res.render("filter", { beer: data });
       });
   });
 };
