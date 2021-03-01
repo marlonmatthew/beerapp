@@ -31,11 +31,11 @@ function getRandomBeer() {
   fetch("/api/random_beer", {
     method: "GET",
     headers: {
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    },
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const beerImg = document.getElementById("randomBeerIMG");
       const beerName = document.getElementById("rName");
       const brewery = document.getElementById("rBrewery");
@@ -43,6 +43,7 @@ function getRandomBeer() {
       const abv = document.getElementById("rABV");
 
       beerImg.src = data.image;
+      console.log(data.image);
       beerName.textContent = data.name;
       brewery.textContent = data.brewery;
       flavor.textContent = data.flavor;
@@ -55,11 +56,11 @@ function getFeaturedBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json"
-    }
+      "Content-Type": "application/json",
+    },
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const beerImg = document.getElementById("featuredBeerIMG");
       const beerName = document.getElementById("fName");
       const brewery = document.getElementById("fBrewery");
@@ -67,6 +68,7 @@ function getFeaturedBeer() {
       const abv = document.getElementById("fABV");
 
       beerImg.src = data.image;
+      console.log(data.image);
       beerName.textContent = data.name;
       brewery.textContent = data.brewery;
       flavor.textContent = data.flavor;
