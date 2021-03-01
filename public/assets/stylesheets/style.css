@@ -3,9 +3,13 @@ form.login {
   margin-top: 50px;
 }
 
-h2 {
+h1, h2, h3, h4 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 55px;
+}
+
+h5 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
 }
 
 .screen {
@@ -216,10 +220,10 @@ h2 {
   border-radius: 5px;
 }
 
-#randomBeerIMG {
+/* #randomBeerIMG {
   width: 320px;
   height: 200px;
-}
+} */
 
 .card {
   border: 2px solid rgb(0, 0, 0);
@@ -243,4 +247,21 @@ h2 {
 #aside {
   margin-left: auto;
   margin-right: auto;
+}
+
+.container img {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #e77103;
+  padding: 10px;
+}
+
+#fBrewery, #fFlavor, #rBrewery, #rFlavor, #fABV, #rABV {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #e77103;
+  font-size: 30px;
 }
