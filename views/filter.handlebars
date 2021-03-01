@@ -21,13 +21,13 @@
 
 <h1>Here is your filtered list!</h1>
 
-
 <div class="container">
   <div class="row">
     {{#each beer}}
     <div class="col-sm-3">
       {{> beerCard/beer-card}}
     </div>
+    {{!-- This is if there is no beers it will revert to this next line --}}
     {{else}}
     <h4>No Beers found - <a href="/members">Go back from where you came from</a></h4>
     {{/each}}
