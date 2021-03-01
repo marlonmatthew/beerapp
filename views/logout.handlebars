@@ -1,0 +1,35 @@
+<html id="bgColor">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light" id="navbarMenu">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" id="beerMe">Gentle Drinkers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a class="nav-link" href="/list" id="navLinks">Beer List</a>
+        <a class="nav-link" href="/members" id="navLinks">Profile</a>
+        <a class="nav-link" href="/" id="navLinks">Log Out</a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">
+      Dashboard
+    </h1>
+    <p class="subtitle">
+      Welcome, <strong>{{firstName}}</strong>!
+    </p>
+    <button id="logout-button" class="button is-link">Logout</button>
+  </div>
+</section>
+
+<script src="./dashboard.js"></script>

@@ -21,8 +21,8 @@ module.exports = function(app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
-      name: req.body.name,
-      password: req.body.password
+      name: req.body.name
+      // password: req.body.password
     })
       .then(() => {
         res.redirect(307, "/api/login");
@@ -31,6 +31,18 @@ module.exports = function(app) {
         res.status(401).json(err);
       });
   });
+
+  // // DELETE
+  // app.delete("/owner/:id", (req, res) => {
+  //   const id = req.params.id;
+  //   db.owners
+  //     .destroy({
+  //       where: { id: id }
+  //     })
+  //     .then(deletedOwner => {
+  //       res.json(deletedOwner);
+  //     });
+  // });
 
   // Route for logging user out
   app.get("/logout", (req, res) => {
@@ -77,6 +89,18 @@ module.exports = function(app) {
       })
       .then(data => {
         res.render("filter", { beer: data });
+      });
+  });
+
+  // DELETE single owner
+  app.delete("/owner/:id", (req, res) => {
+    const id = req.params.id;
+    db.owners
+      .destroy({
+        where: { id: id }
+      })
+      .then(deletedOwner => {
+        res.json(deletedOwner);
       });
   });
 };

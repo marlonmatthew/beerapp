@@ -4,6 +4,6 @@ logoutButton.addEventListener("click", () => {
   fetch("/api/logout", {
     method: "POST"
   }).then(() => {
-    window.location.href = "/login";
+    window.location.href = "/public/assets/js/login.js";
   });
 });
