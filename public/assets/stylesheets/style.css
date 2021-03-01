@@ -204,6 +204,7 @@ h5 {
 
 #randomBeerCard {
   margin-top: 20px;
+  margin-bottom: 40px;
   background-color: #231f1d;
   color: white;
 }
@@ -214,12 +215,19 @@ h5 {
   width: auto;
 }
 
+.listOfBeers {
+  display: block;
+}
+
 #featuredBeerIMG {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
   border: 3px solid #e77103;
+<<<<<<< HEAD
   /* padding: 10px; */
+=======
+>>>>>>> 37e90fea9f166f7cbba33d3b0e6e8c8a973d28e6
 }
 
 #randomBeerIMG {
@@ -227,7 +235,17 @@ h5 {
   margin-right: auto;
   border-radius: 5px;
   border: 3px solid #e77103;
+<<<<<<< HEAD
   /* padding: 10px; */
+=======
+}
+
+#beerListIMG {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+>>>>>>> 37e90fea9f166f7cbba33d3b0e6e8c8a973d28e6
 }
 
 .card {
@@ -236,13 +254,19 @@ h5 {
   border-radius: 10px;
 }
 
+#beerList {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  height: 550px;
+}
+
 .card-title {
   text-align: center;
 }
 
 #beerGuide {
   margin-top: 20px;
-  color: white;
   border: 2px solid rgb(0, 0, 0);
   box-shadow: 2px 2px 2px rgb(24, 24, 24);
   border-radius: 10px;
@@ -250,7 +274,9 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  font-size: 12px;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 #aside {
@@ -271,8 +297,20 @@ h5 {
 #fName,
 #fBrewery,
 #fFlavor,
-#fABV {
+#fABV,
+#listOther {
   font-weight: bold;
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+#beerListCards {
+  margin-top: 30px;
+}
+
+#randomBeer {
+  margin-top: 10px;
+  font-size: medium;
+}
+>>>>>>> 37e90fea9f166f7cbba33d3b0e6e8c8a973d28e6
