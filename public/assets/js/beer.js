@@ -31,11 +31,11 @@ function getRandomBeer() {
   fetch("/api/random_beer", {
     method: "GET",
     headers: {
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json"
+    }
   })
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
       const beerImg = document.getElementById("randomBeerIMG");
       const beerName = document.getElementById("rName");
       const brewery = document.getElementById("rBrewery");
@@ -56,11 +56,11 @@ function getFeaturedBeer() {
     method: "GET",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json"
+    }
   })
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
       const beerImg = document.getElementById("featuredBeerIMG");
       const beerName = document.getElementById("fName");
       const brewery = document.getElementById("fBrewery");
