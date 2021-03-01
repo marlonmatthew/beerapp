@@ -2,10 +2,7 @@
 const express = require("express");
 const session = require("express-session");
 const db = require("./models/index");
-const mysql = require("mysql");
-const connection = mysql.createConnection(process.env.JAWSDB_URL)
 
-connection.connection();
 // Requiring passport as we've configured it---fix this error
 const passport = require("./config/passport");
 

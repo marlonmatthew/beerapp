@@ -25,11 +25,11 @@ function myFunction() {
 }
 
 const underAge = document.getElementById("Notage");
-if (underAge){
-  underAge.addEventListener("click", e =>{
+if (underAge) {
+  underAge.addEventListener("click", e => {
     e.preventDefault();
-    alert("Please wait until legal drinking age")
-  })
+    alert("Please wait until legal drinking age");
+  });
 }
 document.getElementById("randomBeer").addEventListener("click", getRandomBeer);
 
@@ -123,5 +123,3 @@ if (filterBeerList) {
 
 getFeaturedBeer();
 getRandomBeer();
-
-
