@@ -9,7 +9,7 @@ module.exports = {
     dialect: "mysql"
   },
   test: {
-    username: "	tw5rbgt459c0wk0r",
+    username: "tw5rbgt459c0wk0r",
     password: process.env.DBPASSWORD,
     database: "pj4qq2yjmuzx0dqp",
     host: "hwr4wkxs079mtb19.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
