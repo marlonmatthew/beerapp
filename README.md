@@ -48,4 +48,12 @@ For any questions or concerns, please contact us on our GitHubs!
 
 
 ## ScreenShot
-![Alt Text]()
+![Age Page](https://res.cloudinary.com/cfuer12/image/upload/v1614668772/gentle%20drinkers%20screenshots/beer1.png)
+
+![Login Page](https://res.cloudinary.com/cfuer12/image/upload/v1614668772/gentle%20drinkers%20screenshots/beer2.png)
+
+![Memebers Page](https://res.cloudinary.com/cfuer12/image/upload/v1614668771/gentle%20drinkers%20screenshots/beer3.png)
+
+![Members Page](https://res.cloudinary.com/cfuer12/image/upload/v1614668772/gentle%20drinkers%20screenshots/beer4.png)
+
+![Beer List](https://res.cloudinary.com/cfuer12/image/upload/v1614668777/gentle%20drinkers%20screenshots/beer5.png)
