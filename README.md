@@ -7,11 +7,9 @@
   * [Usage](#usage)
   * [Tools](#tools)
   * [License](#license)
-  * [Roadmap](#roadmap)
-  * [Contributions](#contributions)
-  * [Tests](#tests)
   * [Questions](#questions)
   * [Screencastify](#Screencastify)
+  * [Screenshots](#screenshots)
 
 ## User Story 
 Imagine walking into a liquor store and not knowing what type of beer to drink for the night. Now a User can choose what kind of beer they would like to drink depending on the specific categories they choose. From thousands of different beers and the ability to input beers that the user comes across, Gentle Drinker will let any user find new beers to try based on ABV and flavor or even see a featured beer of the day or generate a random choice of beer to try next time they feel adventuring off the normal choices!
