@@ -18,18 +18,23 @@ h5 {
 p {
   font-family: "Prompt", sans-serif;
 }
-
+/* this changes the single h1 tag on "age" handlebars page */
 .h1,
 h1 {
   font-size: 50px;
 }
-
+/* change single tag */
+.h2, h2 {
+  font-size: 50px;
+}
+/* change single tag */
 .h4,
 h4 {
   font-family: "Prompt", sans-serif;
 }
-
-.h5, h5 {
+/* change single tag */
+.h5,
+h5 {
   font-size: 25px;
 }
 
@@ -113,6 +118,7 @@ h4 {
 
 #selectText {
   margin-top: 20px;
+  font-family: "Prompt", sans-serif;
 }
 
 #email-input,
@@ -353,6 +359,10 @@ h4 {
 #ageBox {
   padding: 10px;
 }
- #submitButton {
-   color: whitesmoke;
- }
+#submitButton {
+  color: whitesmoke;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: "Prompt", sans-serif;
+}
