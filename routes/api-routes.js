@@ -2,6 +2,7 @@
 const db = require("../models");
 const passport = require("../config/passport");
 
+let shuttle;
 // const { resolveConfigFile } = require("prettier");
 const isAuth = (req, res, next) => {
   if (!req.isAuthenticated()) {
