@@ -4,12 +4,12 @@ const isAuthenticated = require("../config/middleware/isAuthenticated.js");
 // const { nextTick } = require("process");
 // const authRoutes = require("./authRoutes");
 
-// const isAuth = (req, res, next) => {
-//   if (!req.isAuthenticated()) {
-//     return res.redirect(401, "/login");
-//   }
-//   next();
-// };
+const isAuth = (req, res, next) => {
+  if (!req.isAuthenticated()) {
+    return res.redirect(401, "/login");
+  }
+  next();
+};
 
 module.exports = app => {
   app.get("/", (req, res) => {
@@ -38,5 +38,9 @@ module.exports = app => {
   app.get("/signup", (req, res) => {
     console.log("getting page");
     res.render("signup");
+  });
+
+  app.get("/logout", isAuth, (req, res) => {
+    res.render("logout", { name: req.user.name });
   });
 };
