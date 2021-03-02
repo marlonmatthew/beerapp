@@ -383,3 +383,30 @@ h5 {
   position: absolute;
   display: all;
 } */
+
+.subtitle {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+}
+
+#logout-button {
+  color: black;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+strong {
+  font-family: "Bebas Neue", cursive;
+  color: #e77103;
+}
+
+#logout {
+  margin: auto;
+  border: 10px solid #e77103;
+}

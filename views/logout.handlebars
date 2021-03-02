@@ -1,9 +1,11 @@
 <section class="section">
-  <div class="container">
-  <p class="subtitle">
-      Do you wish to log out?, <strong>{{name}}</strong>!
+  <div class="container" id="logout">
+    <p class="subtitle">
+      Do you wish to log out, <strong>{{name}}</strong> ?
     </p>
-    <button method="POST" action = "/api/logout" id="logout-button" class="button is-link">Logout</button>
+    <div class="text-center">
+      <button method="POST" action="/api/logout" id="logout-button" class="button is-link">Logout</button>
+    </div>
   </div>
 </section>
 
