@@ -366,3 +366,20 @@ h5 {
   animation: glow 1s ease-in-out infinite alternate;
   font-family: "Prompt", sans-serif;
 }
+
+#bgColor {
+  background: #000 url(https://cdn.discordapp.com/attachments/790068588387106839/816225723655258192/black_brick_background_by_survivorcz_dagb0ty-fullview.png);
+  color: #fff;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* .color-overlay {
+  width: 100%;
+  height: 190%;
+  background: silver;
+  opacity: .2;
+  position: absolute;
+  display: all;
+} */
