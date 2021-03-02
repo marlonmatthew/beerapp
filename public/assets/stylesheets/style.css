@@ -24,7 +24,8 @@ h1 {
   font-size: 50px;
 }
 /* change single tag */
-.h2, h2 {
+.h2,
+h2 {
   font-size: 50px;
 }
 /* change single tag */
@@ -368,11 +369,10 @@ h5 {
 }
 
 #bgColor {
-  background: #000 url(https://cdn.discordapp.com/attachments/790068588387106839/816225723655258192/black_brick_background_by_survivorcz_dagb0ty-fullview.png);
+  background: #000
+    url(https://cdn.discordapp.com/attachments/790068588387106839/816225723655258192/black_brick_background_by_survivorcz_dagb0ty-fullview.png);
   color: #fff;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 /* .color-overlay {
