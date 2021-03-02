@@ -6,9 +6,9 @@ const passport = require("../config/passport");
 const isAuth = (req, res, next) => {
   if (!req.isAuthenticated()) {
     return res.redirect(401, "/login");
-  };
+  }
   return next();
-}
+};
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
