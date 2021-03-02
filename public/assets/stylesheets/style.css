@@ -3,6 +3,36 @@ form.login {
   margin-top: 50px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", cursive;
+}
+
+h5 {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+p {
+  font-family: "Prompt", sans-serif;
+}
+
+.h1,
+h1 {
+  font-size: 50px;
+}
+
+.h4,
+h4 {
+  font-family: "Prompt", sans-serif;
+}
+
+.h5, h5 {
+  font-size: 25px;
+}
+
 .screen {
   width: 100%;
   height: 100vh;
@@ -26,12 +56,32 @@ form.login {
 }
 
 #beerMe {
+  text-align: center;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+  color: #e77103;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e77103,
+      0 0 40px #e77103, 0 0 50px #e77103, 0 0 60px #e77103, 0 0 70px #e77103;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e77103,
+      0 0 50px #e77103, 0 0 60px #e77103, 0 0 70px #e77103, 0 0 80px #e77103;
+  }
 }
 
 #navLinks {
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
   color: #e77103;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
 }
 
 .welcome {
@@ -144,8 +194,8 @@ form.login {
 
 #welcomeHeader {
   margin-top: 30px;
-  margin-bottom: 30px;
   color: white;
+  padding: 10px;
 }
 
 #welcomeSection {
@@ -283,6 +333,7 @@ form.login {
 #fABV,
 #listOther {
   font-weight: bold;
+  /* text-align: center; */
 }
 
 #beerListCards {
@@ -292,4 +343,16 @@ form.login {
 #randomBeer {
   margin-top: 10px;
   font-size: medium;
+  color: whitesmoke;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: "Prompt", sans-serif;
 }
+
+#ageBox {
+  padding: 10px;
+}
+ #submitButton {
+   color: whitesmoke;
+ }
