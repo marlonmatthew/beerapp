@@ -62,6 +62,7 @@ module.exports = function(app) {
   //Route for getting entire beer list from database
   app.get("/list", (req, res) => {
     db.beer.findAll({ raw: true }).then(result => {
+      console.table(result);
       res.render("list", { beer: result });
     });
   });
