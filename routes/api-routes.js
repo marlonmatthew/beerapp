@@ -1,8 +1,14 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
-// const { resolveConfigFile } = require("prettier");
 
+// const { resolveConfigFile } = require("prettier");
+const isAuth = (req, res, next) => {
+  if (!req.isAuthenticated()) {
+    return res.redirect(401, "/login");
+  }
+  return next();
+};
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -21,8 +27,8 @@ module.exports = function(app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
-      name: req.body.name
-      // password: req.body.password
+      name: req.body.name,
+      password: req.body.password
     })
       .then(() => {
         res.redirect(307, "/api/login");
@@ -30,24 +36,6 @@ module.exports = function(app) {
       .catch(err => {
         res.status(401).json(err);
       });
-  });
-
-  // // DELETE
-  // app.delete("/owner/:id", (req, res) => {
-  //   const id = req.params.id;
-  //   db.owners
-  //     .destroy({
-  //       where: { id: id }
-  //     })
-  //     .then(deletedOwner => {
-  //       res.json(deletedOwner);
-  //     });
-  // });
-
-  // Route for logging user out
-  app.get("/logout", (req, res) => {
-    req.logout();
-    res.redirect("/");
   });
 
   // Route for getting some data about our user to be used client side
@@ -92,16 +80,11 @@ module.exports = function(app) {
       });
   });
 
-  // DELETE single owner
-  app.delete("/owner/:id", (req, res) => {
-    const id = req.params.id;
-    db.owners
-      .destroy({
-        where: { id: id }
-      })
-      .then(deletedOwner => {
-        res.json(deletedOwner);
-      });
+  app.post("/api/logout", isAuth, async (req, res) => {
+    req.session.destroy(() => {
+      res.clearCookies("connect.sid", { path: "/" });
+      res.send(true);
+    });
   });
 };
 

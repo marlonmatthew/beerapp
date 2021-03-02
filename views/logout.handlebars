@@ -1,13 +1,10 @@
 <section class="section">
   <div class="container">
-    <h1 class="title">
-      Dashboard
-    </h1>
-    <p class="subtitle">
-      Welcome, <strong>{{firstName}}</strong>!
+  <p class="subtitle">
+      Do you wish to log out?, <strong>{{name}}</strong>!
     </p>
-    <button id="logout-button" class="button is-link">Logout</button>
+    <button method="POST" action = "/api/logout" id="logout-button" class="button is-link">Logout</button>
   </div>
 </section>
 
-<script src="./dashboard.js"></script>
+<script src="../routes/api-routes.js"></script>
