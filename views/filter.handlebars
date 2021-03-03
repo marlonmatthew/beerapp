@@ -1,4 +1,4 @@
-<html id="bgColor">
+<div class="color-overlay"></div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="navbarMenu">
   <div class="container-fluid">
     <a class="navbar-brand" href="/" id="beerMe">Gentle Drinkers</a>
@@ -13,14 +13,12 @@
       </ul>
       <form class="d-flex">
         <a class="nav-link" href="/list" id="navLinks">Beer List</a>
-        <a class="nav-link" href="/members" id="navLinks">Profile</a>
-        <a class="nav-link"  href="/logout" id="navLinks">Log Out</a>
+        <a class="nav-link" href="/members" id="navLinks">Main</a>
+        <a class="nav-link" method="POST" href="/logout" id="navLinks">Log Out</a>
       </form>
     </div>
   </div>
 </nav>
-
-<h1>Here is your filtered list!</h1>
 
 <div class="container">
   <div class="row">
@@ -37,9 +35,9 @@
 
 {{!-- footer --}}
 <footer class="footer py-4 font-small text-light">
-    <div class="footer-copyright text-center container-fluid">
-        © Gentle Drinkers, 2021
-    </div>
+  <div class="footer-copyright text-center container-fluid">
+    © Gentle Drinkers, 2021
+  </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
