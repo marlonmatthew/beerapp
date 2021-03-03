@@ -1,3 +1,5 @@
+let featuredBeerId;
+
 const age = document.getElementById("age");
 if (age) {
   age.addEventListener("click", myFunction);
@@ -43,6 +45,10 @@ function getRandomBeer() {
   })
     .then(response => response.json())
     .then(data => {
+      if (data.id === featuredBeerId) {
+        getRandomBeer();
+      }
+      console.log(`random id: ${data.id}`);
       const beerImg = document.getElementById("randomBeerIMG");
       const beerName = document.getElementById("rName");
       const brewery = document.getElementById("rBrewery");
@@ -74,6 +80,8 @@ function getFeaturedBeer() {
       const flavor = document.getElementById("fFlavor");
       const abv = document.getElementById("fABV");
 
+      featuredBeerId = data.id;
+      console.log(`featured: ${featuredBeerId}`);
       beerImg.src = data.image;
       console.log(data.image);
       beerName.textContent = data.name;
