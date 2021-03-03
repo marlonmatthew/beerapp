@@ -59,12 +59,6 @@ module.exports = function(app) {
     res.json(randomBeer);
   });
 
-  //Route for getting entire beer list from database
-  // app.get("/list", (req, res) => {
-  //   db.beer.findAll({ raw: true }).then(result => {
-  //     res.render("list", { beer: result });
-  //   });
-  // });
   app.get("/list", async (req, res) => {
     const getBeerlist = await getAll();
     res.render("list", { beer: getBeerlist });
@@ -84,7 +78,7 @@ module.exports = function(app) {
   //     });
   // });
 
-  app.get("/api/filter", async (req, res) => {
+  app.get("/filter", async (req, res) => {
     const getfilteredBeers = await getfiltered(
       req.query.abvPerc,
       req.query.flavorRadio
@@ -94,7 +88,7 @@ module.exports = function(app) {
 
   app.post("/api/logout", isAuth, async (req, res) => {
     req.session.destroy(() => {
-      res.clearCookies("connect.sid", { path: "/" });
+      res.clearCookie("connect.sid", { path: "/" });
       res.send(true);
     });
   });
