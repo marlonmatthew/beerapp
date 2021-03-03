@@ -59,12 +59,6 @@ module.exports = function(app) {
     res.json(randomBeer);
   });
 
-  //Route for getting entire beer list from database
-  // app.get("/list", (req, res) => {
-  //   db.beer.findAll({ raw: true }).then(result => {
-  //     res.render("list", { beer: result });
-  //   });
-  // });
   app.get("/list", async (req, res) => {
     const getBeerlist = await getAll();
     res.render("list", { beer: getBeerlist });
