@@ -88,7 +88,7 @@ module.exports = function(app) {
 
   app.post("/api/logout", isAuth, async (req, res) => {
     req.session.destroy(() => {
-      res.clearCookies("connect.sid", { path: "/" });
+      res.clearCookie("connect.sid", { path: "/" });
       res.send(true);
     });
   });

@@ -1,10 +1,10 @@
-// const logoutButton = document.getElementById("logout-button");
+const logoutButton = document.getElementById("logout-button");
 
-// logoutButton.addEventListener("click", () => {
-//   fetch("/login", {
-//     method: "get"
-//   }).then(() => {
-//     window.location.href = "/";
-//   });
-//   console.log("click")
-// });
+logoutButton.addEventListener("click", () => {
+  fetch("/api/logout", {
+    method: "post"
+  }).then(() => {
+    window.location.href = "/";
+  });
+  console.log("click")
+});
