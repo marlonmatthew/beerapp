@@ -409,4 +409,11 @@ strong {
 #logout {
   margin: auto;
   border: 10px solid #e77103;
+  /* position: relative; */
+  background-color: black;
+  /* position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 30%;
+  margin: -25px 0 0 -25px; */
 }
