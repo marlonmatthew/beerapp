@@ -1,88 +1,88 @@
 BEER NAME,BREWERY,FLAVOR,ABV%,CLASS ,IMAGE,CREATEDAT,UPDATEDAT
-10w-40,HiWire,Imperial Stout,8,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560466/gentledrinkers/10w-40.png,2021-02-07 8:51:41,2020-03-30 4:43:55
-After The Last Death,Orpheus,Sour Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/After-The-Last-Death.jpg,2021-02-07 8:51:41,2020-03-31 4:43:55
-Ain't That A Peach,Red Hare,Fruited Berliner Weisse,3.9,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Aint-That-A-Peach.png,2021-02-07 8:51:41,2020-04-01 4:43:55
+10w-40,HiWire,Stout,8,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560466/gentledrinkers/10w-40.png,2021-02-07 8:51:41,2020-03-30 4:43:55
+After The Last Death,Orpheus,Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/After-The-Last-Death.jpg,2021-02-07 8:51:41,2020-03-31 4:43:55
+Ain't That A Peach,Red Hare,Berliner Weisse,3.9,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Aint-That-A-Peach.png,2021-02-07 8:51:41,2020-04-01 4:43:55
 American Blackberry Ale,Wild Leap,Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/American-Blackberry-Ale.png,2021-02-07 8:51:41,2020-04-02 4:43:55
-Apricot Funk,Prairie,Sour Wild Ale,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Apricot-Funk.jpg,2021-02-07 8:51:41,2020-04-03 4:43:55
+Apricot Funk,Prairie,Ale,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Apricot-Funk.jpg,2021-02-07 8:51:41,2020-04-03 4:43:55
 Athena,Creature Comforts,Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Athena.jpg,2021-02-07 8:51:41,2020-04-04 4:43:55
-Athena Paradiso,Creature Comforts,Fruited Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Athena-Paradiso.jpg,2021-02-07 8:51:41,2020-04-05 4:43:55
-Athena Paradiso Guava,Creature Comforts,Fruited Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560466/gentledrinkers/Athena-Paradiso-Guava.jpg,2021-02-07 8:51:41,2020-04-06 4:43:55
+Athena Paradiso,Creature Comforts,Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560467/gentledrinkers/Athena-Paradiso.jpg,2021-02-07 8:51:41,2020-04-05 4:43:55
+Athena Paradiso Guava,Creature Comforts,Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560466/gentledrinkers/Athena-Paradiso-Guava.jpg,2021-02-07 8:51:41,2020-04-06 4:43:55
 Banana Bread Beer,Well's,Ale,5.2,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Banana-Bread-Beer.jpg,2021-02-07 8:51:41,2020-04-07 4:43:55
 Beer for Breakfast Stout,Dogfish Head,Stout,7.4,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Beer-For-Breakfast-Stout.png,2021-02-07 8:51:41,2020-04-08 4:43:55
-Bel Air Sour,Brooklyn,Sour Ale,5.8,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Bel-Air-Sour.jpg,2021-02-07 8:51:41,2020-04-09 4:43:55
-Belga Rose,New Realm,Blonde Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Belga-Rose.jpg,2021-02-07 8:51:41,2020-04-10 4:43:55
+Bel Air Sour,Brooklyn,Ale,5.8,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Bel-Air-Sour.jpg,2021-02-07 8:51:41,2020-04-09 4:43:55
+Belga Rose,New Realm,Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Belga-Rose.jpg,2021-02-07 8:51:41,2020-04-10 4:43:55
 Big Shanty Graham Cracker Stout,Burnt Hickory,Stout,9,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Big-Shanty-Graham-Cracker-Stout.jpg,2021-02-08 8:51:41,2020-04-11 4:43:55
 Blackberry Daze IPA,Anchor,IPA,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Blackberry-Daze-IPA.png,2021-02-09 8:51:41,2020-04-12 4:43:55
 Bleeding Heart,Second Self,Ale,6.9,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Bleeding-Heart.png,2021-02-10 8:51:41,2020-04-13 4:43:55
 Bourbon Barrel Stout,Kentucky,Stout,8,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Bourbon-Barrel-Stout.jpg,2021-02-11 8:51:41,2020-04-14 4:43:55
 Briney Melon Gose,Anderson Valley,Gose,4.2,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Briney-Melon-Gose.jpg,2021-02-12 8:51:41,2020-04-15 4:43:55
-Cherry Apricot Vanilla,Trimtab,Sour Berliner Weisse,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Cherry-Apricot-Vanilla.jpg,2021-02-13 8:51:41,2020-04-16 4:43:55
-Cherry Limeade,Cherry Street,Sour Berliner Weisse,4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Cherry-Limeade.jpg,2021-02-14 8:51:41,2020-04-17 4:43:55
+Cherry Apricot Vanilla,Trimtab,Berliner Weisse,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560468/gentledrinkers/Cherry-Apricot-Vanilla.jpg,2021-02-13 8:51:41,2020-04-16 4:43:55
+Cherry Limeade,Cherry Street,Berliner Weisse,4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Cherry-Limeade.jpg,2021-02-14 8:51:41,2020-04-17 4:43:55
 Cherry Pie Ale,Wild Leap,Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Cherry-Pie-Ale.png,2021-02-15 8:51:41,2020-04-18 4:43:55
 Cherry Stout,Bell's,Stout,7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Cherry-Stout.png,2021-02-16 8:51:41,2020-04-19 4:43:55
 Chocolate Orange Stout,Breckenridge,Stout,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Chocolate-Orange-Stout.png,2021-02-17 8:51:41,2020-04-20 4:43:55
-Choklat,Southern Tier,Imperial Stout,10,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Choklat.jpg,2021-02-18 8:51:41,2020-04-21 4:43:55
+Choklat,Southern Tier,Stout,10,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560469/gentledrinkers/Choklat.jpg,2021-02-18 8:51:41,2020-04-21 4:43:55
 Coco Pina Gose,Coastal Empire Beer,Gose,4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Coco-Pina-Gose.png,2021-02-19 8:51:41,2020-04-22 4:43:55
 Coconut Pecan Stout,D 9,Stout,8,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/coconut-pecan-Stout.png,2021-02-21 8:51:41,2020-04-23 4:43:55
 Coconut Porter,Cherry Street,Porter,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Coconut-Porter.jpg,2021-02-21 8:51:41,2020-04-24 4:43:55
 Cotton Tail Creamsicale,Red Hare,Ale,5.5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Cotton-Tail-Creamsicale.jpg,2021-02-22 8:51:41,2020-04-25 4:43:55
-Cucumber Sour,10 Barrel,Sour Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Cucumber-Sour.png,2021-02-23 8:51:41,2020-04-26 4:43:55
-Declaration,Reformation,Imperial Stout,9.7,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Declaration-Reformation.png,2021-02-24 8:51:41,2020-04-27 4:43:55
-Dirty Beaches Tropical Wheat,Scofflaw,Wheat Ale,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Dirty-Beaches-Tropical-Wheat.png,2021-02-25 8:51:41,2020-04-28 4:43:55
-Discography Sour Collection,Southbound,Sour Ale,5.8,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Discography-Sour-Collection.jpg,2021-02-26 8:51:41,2020-04-29 4:43:55
+Cucumber Sour,10 Barrel,Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Cucumber-Sour.png,2021-02-23 8:51:41,2020-04-26 4:43:55
+Declaration,Reformation,Stout,9.7,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Declaration-Reformation.png,2021-02-24 8:51:41,2020-04-27 4:43:55
+Dirty Beaches Tropical Wheat,Scofflaw,Ale,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560470/gentledrinkers/Dirty-Beaches-Tropical-Wheat.png,2021-02-25 8:51:41,2020-04-28 4:43:55
+Discography Sour Collection,Southbound,Ale,5.8,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Discography-Sour-Collection.jpg,2021-02-26 8:51:41,2020-04-29 4:43:55
 Dreams of Oblivion,Trimtab,IPA,7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Dreams-Of-Oblivion.jpg,2021-02-27 8:51:41,2020-04-30 4:43:55
 Emergency Drinking Beer Watermelon,Wild Heaven,Ale,4.3,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Emergency-Drinking-Beer-Watermelon.jpg,2021-02-28 8:51:41,2020-05-01 4:43:55
 Even More Pecan Pie Jesus,Evil Twin,Stout,12,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Even-More-Pecan-Pie-Jesus.jpg,2021-03-01 8:51:41,2020-05-02 4:43:55
-Ferryman,Orpheus,Imperial Stout,10.5,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Ferryman.jpg,2021-03-02 8:51:41,2020-05-03 4:43:55
-Fistful of Cake,Monday Night,Imperial Stout,9,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Fistful-Of-Cake.png,2021-03-03 8:51:41,2020-05-04 4:43:55
+Ferryman,Orpheus,Stout,10.5,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Ferryman.jpg,2021-03-02 8:51:41,2020-05-03 4:43:55
+Fistful of Cake,Monday Night,Stout,9,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560471/gentledrinkers/Fistful-Of-Cake.png,2021-03-03 8:51:41,2020-05-04 4:43:55
 Fruited Gose,Red Brick,Gose,4.7,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560472/gentledrinkers/Fruited-Gose.jpg,2021-03-04 8:51:41,2020-05-05 4:43:55
 Gose,Westbrook,Gose,4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560472/gentledrinkers/Gose.jpg,2021-03-05 8:51:41,2020-05-06 4:43:55
 Half Gallon Milk Stout,Gate City,Stout,5.2,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560472/gentledrinkers/Half-Gallon-Milk-Stout.jpg,2021-03-06 8:51:41,2020-05-07 4:43:55
-Honorary Girl Scout Sam O'Nut Cookies,Pontoon,Milk Porter,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560472/gentledrinkers/Honorary-Girl-Scout-Sam-ONut-Cookies.jpg,2021-03-07 8:51:41,2020-05-08 4:43:55
+Honorary Girl Scout Sam O'Nut Cookies,Pontoon,Porter,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560472/gentledrinkers/Honorary-Girl-Scout-Sam-ONut-Cookies.jpg,2021-03-07 8:51:41,2020-05-08 4:43:55
 Hop Cocoa,Wicked Weed,Porter,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560472/gentledrinkers/Hop-Cocoa.png,2021-03-08 8:51:41,2020-05-09 4:43:55
-Imperial Oaxaca Choca,New Realm,Imperial Stout,10.7,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560473/gentledrinkers/Imperial-Oaxaca-Choca.jpg,2021-03-12 8:51:41,2020-05-13 4:43:55
+Imperial Oaxaca Choca,New Realm,Stout,10.7,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560473/gentledrinkers/Imperial-Oaxaca-Choca.jpg,2021-03-12 8:51:41,2020-05-13 4:43:55
 Imperial Peach Gose,Southern Tier,Gose,8.3,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560473/gentledrinkers/Imperial-Peach-Gose.jpg,2021-03-13 8:51:41,2020-05-14 4:43:55
-Imperial Stout,Samuel Smith's,Imperial Stout,7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Imperial-Stout.jpg,2021-03-14 8:51:41,2020-05-15 4:43:55
+Imperial Stout,Samuel Smith's,Stout,7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Imperial-Stout.jpg,2021-03-14 8:51:41,2020-05-15 4:43:55
 Keylime Pie Gose,Westbrook,Gose,4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Keylime-Pie-Gose.jpg,2021-03-15 8:51:41,2020-05-16 4:43:55
 "Kimmie, Yink, Holy Gose",Anderson Valley,Gose,4.2,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Kimmie-Yink-Holy-Gose.jpg,2021-03-16 8:51:41,2020-05-17 4:43:55
 King Coconut,Catawba,Porter,5.5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/King-Coconut.png,2021-03-17 8:51:41,2020-05-18 4:43:55
-Koko Buni,Creature Comforts,Milk Porter,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Koko-Buni.jpg,2021-03-18 8:51:41,2020-05-19 4:43:55
-Larry's Latest Sour Ale,Bell's,Sour Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Larrys-Latest-Sour-Ale.png,2021-03-19 8:51:41,2020-05-20 4:43:55
+Koko Buni,Creature Comforts,Porter,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Koko-Buni.jpg,2021-03-18 8:51:41,2020-05-19 4:43:55
+Larry's Latest Sour Ale,Bell's,Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560474/gentledrinkers/Larrys-Latest-Sour-Ale.png,2021-03-19 8:51:41,2020-05-20 4:43:55
 Limey Gose,Victory,Gose,4.7,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560475/gentledrinkers/Limey-Gose.png,2021-03-20 8:51:41,2020-05-21 4:43:55
 Liquid Bliss,Terrapin,Porter,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560475/gentledrinkers/Liquid-Bliss.jpg,2021-03-21 8:51:41,2020-05-22 4:43:55
-Marionberry Sour,Rogue,Sour Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560475/gentledrinkers/Marionberry-Sour.jpg,2021-03-22 8:51:41,2020-05-23 4:43:55
+Marionberry Sour,Rogue,Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560475/gentledrinkers/Marionberry-Sour.jpg,2021-03-22 8:51:41,2020-05-23 4:43:55
 Maverick and Gose,Second Self,Gose,4.4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560475/gentledrinkers/Maverick-And-Gose.jpg,2021-03-23 8:51:41,2020-05-24 4:43:55
-Mavis,Wild Heaven,Sour Ale,5.5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Mavis.jpg,2021-03-24 8:51:41,2020-05-25 4:43:55
-Milk Stout,Duck Rabbit,Milk Stout,5.7,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Milk-Stout-Duck-Rabbit.jpg,2021-03-25 8:51:41,2020-05-26 4:43:55
-Milk Stout,Left Hand,Milk Stout,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Milk-Stout-Left-Hand.jpg,2021-03-26 8:51:41,2020-05-27 4:43:55
+Mavis,Wild Heaven,Ale,5.5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Mavis.jpg,2021-03-24 8:51:41,2020-05-25 4:43:55
+Milk Stout,Duck Rabbit,Stout,5.7,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Milk-Stout-Duck-Rabbit.jpg,2021-03-25 8:51:41,2020-05-26 4:43:55
+Milk Stout,Left Hand,Stout,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Milk-Stout-Left-Hand.jpg,2021-03-26 8:51:41,2020-05-27 4:43:55
 Mocha Porter,Rogue,Porter,5.6,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Mocha-Porter.jpg,2021-03-27 8:51:41,2020-05-28 4:43:55
 Mole Porter,Second Self,Porter,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Mole-Porter.png,2021-03-28 8:51:41,2020-05-29 4:43:55
-Moohoo,Terrapin,Milk Stout,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Moohoo.png,2021-03-29 8:51:41,2020-05-30 4:43:55
-Narwhal,Sierra Nevada,Imperial Stout,10.2,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Narwhal.png,2021-03-30 8:51:41,2020-05-31 4:43:55
-Neapolitan Milkshake Stout,Scofflaw,Milk Stout,5.5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Neapolitan-Milkshake-Stout.png,2021-03-31 8:51:41,2020-06-01 4:43:55
+Moohoo,Terrapin,Stout,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Moohoo.png,2021-03-29 8:51:41,2020-05-30 4:43:55
+Narwhal,Sierra Nevada,Stout,10.2,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Narwhal.png,2021-03-30 8:51:41,2020-05-31 4:43:55
+Neapolitan Milkshake Stout,Scofflaw,Stout,5.5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560476/gentledrinkers/Neapolitan-Milkshake-Stout.png,2021-03-31 8:51:41,2020-06-01 4:43:55
 Organic Chocolate Stout,Samuel Smith's,Stout,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Organic-Chocolate-Stout.jpg,2021-04-01 8:51:41,2020-06-02 4:43:55
 Peanut Butter Chocolate Stout,Catawba,Stout,5.4,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Peanut-Butter-Chocolate-Porter.png,2021-04-02 8:51:41,2020-06-03 4:43:55
 Peanut Butter Porter,Back Forty (Gadsden),Porter,10,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Peanut-Butter-Porter.png,2021-04-03 8:51:41,2020-06-04 4:43:55
-Pineapple Beach,Funky Buddha,Blonde Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Pineapple-Beach.png,2021-04-04 8:51:41,2020-06-05 4:43:55
-Pink Guava Funk,Prairie,Sour Wild Ale,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560478/gentledrinkers/Pink-Guava-Funk.jpg,2021-04-05 8:51:41,2020-06-06 4:43:55
+Pineapple Beach,Funky Buddha,Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560477/gentledrinkers/Pineapple-Beach.png,2021-04-04 8:51:41,2020-06-05 4:43:55
+Pink Guava Funk,Prairie,Ale,6.3,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560478/gentledrinkers/Pink-Guava-Funk.jpg,2021-04-05 8:51:41,2020-06-06 4:43:55
 Porter,Duck Rabbit,Porter,5.4,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560478/gentledrinkers/Porter-Duck-Rabbit.png,2021-04-06 8:51:41,2020-06-07 4:43:55
 Porter,Founders,Porter,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560478/gentledrinkers/Porter-Founders.jpg,2021-04-07 8:51:41,2020-06-08 4:43:55
-Prairie Flare,Prairie,Leipzig Gose,5.4,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560478/gentledrinkers/Prairie-Flare.jpg,2021-04-08 8:51:41,2020-06-09 4:43:55
-Raspberry Sour,10 Barrel,Sour Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560479/gentledrinkers/Raspberry-Sour.jpg,2021-04-09 8:51:41,2020-06-10 4:43:55
-Red and Black,Southern Brewing,Sour Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560479/gentledrinkers/Red-and-Black.jpg,2021-04-10 8:51:41,2020-06-11 4:43:55
+Prairie Flare,Prairie,Gose,5.4,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560478/gentledrinkers/Prairie-Flare.jpg,2021-04-08 8:51:41,2020-06-09 4:43:55
+Raspberry Sour,10 Barrel,Ale,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560479/gentledrinkers/Raspberry-Sour.jpg,2021-04-09 8:51:41,2020-06-10 4:43:55
+Red and Black,Southern Brewing,Berliner Weisse,4.5,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560479/gentledrinkers/Red-and-Black.jpg,2021-04-10 8:51:41,2020-06-11 4:43:55
 Rollin' Deep Cinnamon Roll,Wild Leap,Stout,8.5,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560479/gentledrinkers/Rollin-Deep-Cinnamon-Roll.png,2021-04-11 8:51:41,2020-06-12 4:43:55
 Rowdy and Proud,Three Taverns,IPA,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560479/gentledrinkers/Rowdy-And-Proud.jpg,2021-04-12 8:51:41,2020-06-13 4:43:55
 Salted Caramel Chocolate Porter,Genesee,Porter,6.5,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Salted-Caramel-Chocolate-Porter.jpg,2021-04-13 8:51:41,2020-06-14 4:43:55
-Samoa This,Southern Tier,Imperial Stout,10,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Samoa-This.jpg,2021-04-14 8:51:41,2020-06-15 4:43:55
+Samoa This,Southern Tier,Stout,10,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Samoa-This.jpg,2021-04-14 8:51:41,2020-06-15 4:43:55
 Schwarzchild Porter,Southern Sky,Porter,6,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Schwarzchild-Porter.jpg,2021-04-15 8:51:41,2020-06-16 4:43:55
-SeaQuench Ale,Dogfish Head,Sour Ale,4.9,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Seaquench-Ale.jpg,2021-04-16 8:51:41,2020-06-17 4:43:55
-Sticky Treats,Funky Buddha,Blonde Ale,5.1,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Sticky-Treats.jpg,2021-04-17 8:51:41,2020-06-18 4:43:55
+SeaQuench Ale,Dogfish Head,Ale,4.9,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Seaquench-Ale.jpg,2021-04-16 8:51:41,2020-06-17 4:43:55
+Sticky Treats,Funky Buddha,Ale,5.1,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560480/gentledrinkers/Sticky-Treats.jpg,2021-04-17 8:51:41,2020-06-18 4:43:55
 T-Time,Terrapin,Berliner Weisse,4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560481/gentledrinkers/T-Time.jpg,2021-04-18 8:51:41,2020-06-19 4:43:55
 To Gose,Abita,Gose,4.1,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560481/gentledrinkers/To-Gose.png,2021-04-19 8:51:41,2020-06-20 4:43:55
 Two claw IPA,Westbrook,IPA,7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560481/gentledrinkers/Two-claw-IPA.jpg,2021-04-20 8:51:41,2020-06-21 4:43:55
 Vanilla Porter,Breckenridge,Porter,5.4,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560481/gentledrinkers/Vanilla-Porter.png,2021-04-21 8:51:41,2020-06-22 4:43:55
-Wake N Bake Coffee Imperial Stout,Terrapin,Imperial Stout,9.4,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560481/gentledrinkers/Wake-N-Bake-Coffee-Imperial-Stout.png,2021-04-22 8:51:41,2020-06-23 4:43:55
+Wake N Bake Coffee Imperial Stout,Terrapin,Stout,9.4,Very High,https://res.cloudinary.com/cfuer12/image/upload/v1614560481/gentledrinkers/Wake-N-Bake-Coffee-Imperial-Stout.png,2021-04-22 8:51:41,2020-06-23 4:43:55
 Watermelon Gose,Terrapin,Gose,4.3,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560482/gentledrinkers/Watermelon-Gose.png,2021-04-23 8:51:41,2020-06-24 4:43:55
-Wheels Gose Round,Left Hand,Leipzig Gose,4.4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560482/gentledrinkers/Wheels-Gose-Round.png,2021-04-24 8:51:41,2020-06-25 4:43:55
-Wild Sour Cranberry Criek,Destihl,Sour Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560482/gentledrinkers/Wild-Sour-Cranberry-Criek.png,2021-04-25 8:51:41,2020-06-26 4:43:55
-Winter Cheers,Victory,Wheat Ale,6.7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560483/gentledrinkers/Winter-Cheers.png,2021-04-26 8:51:41,2020-06-27 4:43:55
+Wheels Gose Round,Left Hand,Gose,4.4,Low,https://res.cloudinary.com/cfuer12/image/upload/v1614560482/gentledrinkers/Wheels-Gose-Round.png,2021-04-24 8:51:41,2020-06-25 4:43:55
+Wild Sour Cranberry Criek,Destihl,Ale,5,Med,https://res.cloudinary.com/cfuer12/image/upload/v1614560482/gentledrinkers/Wild-Sour-Cranberry-Criek.png,2021-04-25 8:51:41,2020-06-26 4:43:55
+Winter Cheers,Victory,Ale,6.7,High,https://res.cloudinary.com/cfuer12/image/upload/v1614560483/gentledrinkers/Winter-Cheers.png,2021-04-26 8:51:41,2020-06-27 4:43:55
