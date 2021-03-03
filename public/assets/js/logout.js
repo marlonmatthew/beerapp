@@ -6,5 +6,5 @@ logoutButton.addEventListener("click", () => {
   }).then(() => {
     window.location.href = "/";
   });
-  console.log("click")
+  console.log("click");
 });
