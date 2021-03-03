@@ -84,7 +84,7 @@ module.exports = function(app) {
   //     });
   // });
 
-  app.get("/api/filter", async (req, res) => {
+  app.get("/filter", async (req, res) => {
     const getfilteredBeers = await getfiltered(
       req.query.abvPerc,
       req.query.flavorRadio
