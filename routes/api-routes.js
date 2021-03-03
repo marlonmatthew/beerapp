@@ -64,8 +64,21 @@ module.exports = function(app) {
     res.render("list", { beer: getBeerlist });
   });
 
-  app.get("/filter", async (req, res) => {
+  // app.get("/api/filter", (req, res) => {
+  //   db.beer
+  //     .findAll({
+  //       raw: true,
+  //       where: {
+  //         class: req.query.abvPerc,
+  //         flavor: req.query.flavorRadio
+  //       }
+  //     })
+  //     .then(data => {
+  //       res.render("filter", { beer: data });
+  //     });
+  // });
 
+  app.get("/filter", async (req, res) => {
     const getfilteredBeers = await getfiltered(
       req.query.abvPerc,
       req.query.flavorRadio
